@@ -52,6 +52,7 @@ h2 { /* Bruges til underoverskrift */
 button { /* knap */
     font-size: 1.1em;
     font-weight: 500;
+    font-family: "Jost", sans-serif;
 }
 
 h4 { /* introducerende brødtekst */
@@ -379,7 +380,8 @@ main {
     background-color: var(--roed);
     color: var(--lyssand);
     border-radius: 100%;
-    padding: 0.45em 0.7em;
+    width: 2.2em;
+    height: 2.2em;
     transition: transform 0.5s ease;
     cursor: pointer;
 }
