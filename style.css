@@ -214,7 +214,8 @@ main {
 
 .forside_karrusel_wrapper { 
     max-width: 64em; 
-    width: 90%;
+    /* width: 90%; */
+    width: 84%;
 } 
 
 .forside_karrusel  {
@@ -233,7 +234,7 @@ main {
 .forside_karrusel_knap {
     border: 2px solid var(--lyssand);
     background-color: var(--roed);
-    box-shadow: 5px 5px 8px #000000a3;
+    box-shadow: 0px 3px 6px #000000a3;
     border-radius: 50%;
     width: 2.2em;
     height: 2.2em;
@@ -645,92 +646,7 @@ main {
 }
 
 
-/* -------------------- 
-------- EVENTS -------
--------------------- */
-.events_h1 { /* EVENTS titel */
-    color: var(--roed);
-    margin: 1em 0 1em 0;
-    font-size: 2em;
-    text-align: center;
-}
 
-.event_container { /*EN CONTAINER FOR ALLE EVENT-KORTENE OPSAT I GRID FOR SÆTTE DEM I 2 KOLONNER*/
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: center; /*CENTRERE ELEMENTERNE*/
-    gap: 1em;
-    row-gap: 2em;
-    padding: 20px;
-    margin: 0 auto; /* CENTRERE CONTAINEREN */
-    margin-bottom: 4em;
-}
-
-.event_boks {
-    position: relative;
-    width: 100%; /* FYLDER HELE BREDDEN AF KOLONNEN */
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 1px 4px grey;
-}
-
-.event_img {
-    width: 100%;
-    display: block;
-}
-
-.event_navn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--lyssand);
-    text-align: center;
-    padding: 20px;
-}
-
-.event_navn h2 { 
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 1em;
-}
-
-.event_info {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--roed);
-    color: var(--lyssand);
-    display: flex;
-    justify-content: space-between;
-    padding: 5%;
-}
-
-.event_info, .dato, .pris {
-    font-size: 0.9em;
-}
-
-.event_info, .dato {
-    font-weight:600;
-    text-transform: uppercase;
-}
-
-/*-- STYLING AF ON SCROLL EFFEKT -- */
-
-.event_boks_mobil3{
-    transition: all 1.5s;
-    opacity: 0;
-}
-
-.event_boks_mobil4{
-    transition: all 1.5s;
-    opacity: 0;
-}
 
 
 /* ---------------------
@@ -1171,9 +1087,7 @@ footer h4 {
     ------- MAD OG DRIKKE -------
     --------------------------- */
     /* sørger for at man ikke kan scrolle horisontalt */
-    main{
-        overflow-x: hidden;
-    }
+    
 
     #mad_overskrift{
         padding-top: 0%;
@@ -1261,48 +1175,7 @@ footer h4 {
     }
 
 
-    /* -------------------- 
-    ------- EVENTS -------
-    -------------------- */
-    .event_container {
-        grid-template-columns: 30% 30% 30%;
-        justify-content: center;
-        gap: 2.5em;
-        row-gap: 2em;
-        padding: 20px;
-        margin: auto; /*DETTE CENTRERER MIN CONTAINER*/
-        margin-bottom: 4em;
-        max-width: 1000px; /*SÆTTER EN PASSENDE BREDDE FOR MIN CONTAINER*/
-    }
-
-    .events_h1 { /* EVENTS titel */
-        color: var(--roed);
-        margin-top: 1.5em;
-        font-size: 3em;
-        text-align: center;
-    }
-
-    .event_boks:hover {
-        transform: scale(1.05); /* DETTE FORSTØRRE EVENT KORT VED HOVER */
-        box-shadow: 0 4px 8px var(--morkblaa); /* GØR SKYGGEN MØRKERE OG STØRRE */
-        transition: 0.5s ease-in-out; /*SÆTTER EN SMOOTH TRANSITION DER VARER 0.5 s */
-    }
-
-    .event_navn {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: var(--lyssand);
-        text-align: center;
-        padding: 20px;
-        font-size: 1.5em; /*SÆTTER NAVN, DATO, PRIS I DEN KORREKTE STØRRELSE*/
-    }
+    
 
     /* ---------------------
     ------- FEJLSIDE -------

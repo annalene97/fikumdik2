@@ -1,0 +1,191 @@
+/* -------------------- 
+------- EVENTS -------
+-------------------- */
+.events_intro {
+    text-align: center;
+    max-width: 51em;
+    margin: 1em auto;
+}
+
+.events_h1 { /* EVENTS titel */
+    margin-bottom: 0.5em;
+}
+
+.events_filtrering {
+    text-align: center;
+    margin: 2em auto;
+}
+
+.events_h4 {
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.events_filter_knap {
+    font-size: 0.9em;
+    font-weight: 400;
+    padding: 0.2em 0.4em;
+    color: var(--roed);
+    background-color: var(--lyssand);
+    border: 2px solid var(--roed);
+    border-radius: 10px;
+    margin: 0.3em;
+}
+
+.event_container {
+    display: flex;
+}
+
+
+
+
+
+.event_container { 
+    /* display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center; 
+    gap: 1em;
+    row-gap: 2em;
+    padding: 20px;
+    margin: 0 auto; 
+    margin-bottom: 4em; */
+}
+
+.event_boks {
+    position: relative;
+    width: 100%; /* FYLDER HELE BREDDEN AF KOLONNEN */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px grey;
+}
+
+.event_img {
+    width: 100%;
+    display: block;
+}
+
+.event_navn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--lyssand);
+    text-align: center;
+    padding: 20px;
+}
+
+.event_navn h2 { 
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1em;
+}
+
+.event_info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--roed);
+    color: var(--lyssand);
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.event_info, .dato, .pris {
+    font-size: 0.9em;
+}
+
+.event_info, .dato {
+    font-weight:600;
+    text-transform: uppercase;
+}
+
+/*-- STYLING AF ON SCROLL EFFEKT -- */
+
+.event_boks_mobil3{
+    transition: all 1.5s;
+    opacity: 0;
+}
+
+.event_boks_mobil4{
+    transition: all 1.5s;
+    opacity: 0;
+}
+
+
+/* -------------------------------------------------
+
+------ TILPASNING TIL DESKTOP - MEDIA QUERIES ------
+
+-------------------------------------------------- */
+/* BREAKPOINT T. TABLET */
+@media screen and (min-width: 768px){
+    /* ------- GENEREL STYLING --------*/
+    h1 { /* Bruges til over-overskrift */
+        font-size: 2.4em;
+    }
+    
+    h2 { /* Bruges til underoverskrift */
+        font-size: 1.5em;
+    }
+    
+    button { /* knap */
+        font-size: 1.2em;
+    }
+    
+    h4 { /* introducerende brødtekst */
+        font-size: 1.1em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+
+
+/* -------------------- 
+    ------- EVENTS -------
+    -------------------- */
+    .event_container {
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+        gap: 2.5em;
+        row-gap: 2em;
+        padding: 20px;
+        margin: auto; /*DETTE CENTRERER MIN CONTAINER*/
+        margin-bottom: 4em;
+        max-width: 1000px; /*SÆTTER EN PASSENDE BREDDE FOR MIN CONTAINER*/
+    }
+
+    .events_h1 { /* EVENTS titel */
+        color: var(--roed);
+        margin-top: 1.5em;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .event_boks:hover {
+        transform: scale(1.05); /* DETTE FORSTØRRE EVENT KORT VED HOVER */
+        box-shadow: 0 4px 8px var(--morkblaa); /* GØR SKYGGEN MØRKERE OG STØRRE */
+        transition: 0.5s ease-in-out; /*SÆTTER EN SMOOTH TRANSITION DER VARER 0.5 s */
+    }
+
+    .event_navn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--lyssand);
+        text-align: center;
+        padding: 20px;
+        font-size: 1.5em; /*SÆTTER NAVN, DATO, PRIS I DEN KORREKTE STØRRELSE*/
+    }
