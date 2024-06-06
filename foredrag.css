@@ -1,3 +1,15 @@
 #foredrag_banner img{
     width: 100%;
+    height: 70%;
+}
+
+#event_overskrift {
+    margin: 20rem;
+}
+
+.sang_dato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
