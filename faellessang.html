@@ -33,6 +33,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faellessang.css">
 
     <!-- Javascript -->
     <script defer src="script.js"></script>
@@ -83,7 +84,80 @@
     </nav>
 
     <!-- FÆLLESSANG SIDE START  -->
+    <!-- Banner -->
+    <img class="events_banner" src="img/banner/faellesskraal_banner.png" alt="Fællesskrål banner">
+
     <main>
+        <!-- OVERSKRIFT -->
+        <h1 id="sang_h1">FÆLLESSANG</h1>
+
+        <!-- UNDEROVERSKRIFT -->
+        <div class="sang_dato">
+            <h2>18. JUNI</h2>
+            <span class="kunstner_dot"></span>
+            <h2>KL. 19.00 - 21.00</h2>
+            <span class="kunstner_dot"></span>
+            <h2>GRATIS</h2>
+        </div>
+
+        <!-- BRØDTEKST -->
+        <p>
+            <h4 class="sang_tekst">
+                Fikumdik elsker fed musik og godt selskab - det er ingen hemmelighed.
+                Har du lyst til at skråle med på sange fra den danske sangskat? Så kom til vores aften fyldt med musik,
+                hygge og fællesskab. Vi har fundet den blå Højskolesangbog frem, og vi kan ikke vente med at synge vores
+                stemmer hæse sammen med jer.
+            </h4>
+        </p>
+
+        <p>
+            <h4 class="sang_tekst">
+                Vi har sørget for sangbøger til alle, men tag da gerne din egen med. Vores dygtige pianist, Tobias
+                Svendsen, vil klimpre løs, mens vi synger – så uanset om du er en ægte sangfugl, brusebadssanger eller
+                en fællesskabsdyrker, er du mere end velkommen.
+                Tag din kammerat under armen eller kom alene. Vi lover en aften fyldt med god stemning og fællesskab.
+                Der er mulighed for at købe lækker kaf’ i baren, når stemmen har brug for lidt smørelse.
+            </h4>
+        </p>
+
+        <p>
+            <h4 class="sang_tekst">
+                Det er gratis at være med, men der er begrænsede pladser, så skynd dig at melde dig til!
+            </h4>
+        </p>
+
+        <p>
+            <h4 class="sang_tekst">
+                Vi glæder os helt vildt til at synge sammen med dig!
+            </h4>
+        </p>
+
+        <!-- ÆNDRE DISPLAY FONT -->
+        <img id="sang_displayfont" src="img/displayfont/klikpaamig.png" alt="">
+
+        <div class="forms_container">
+            <form>
+                <input type="text" name="input1" placeholder="Emne...">
+
+                <input type="text" name="input2" placeholder="Fulde navn...">
+
+                <input type="text" name="input3" placeholder="Mail...">
+
+                <textarea name="input4" placeholder="Besked..."></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <div><img src="img/displayfont/findeventether.png" alt="Find eventet her" id="events_viser"></div>
+
+        <!--GOOGLE MAPS LOKATION VIA iFRAME-->
+        <div class="kunstner_maps_container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.1838800409228!2d10.178573376772638!3d56.153925273235366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3fd2036a4e2f%3A0xe38d55aed2e854bc!2sFikumdik%20Kaffe!5e0!3m2!1sen!2sdk!4v1716211159477!5m2!1sen!2sdk"
+                width="1000" height="350" style="border:0;" allowfullscreen="" id="kunstner_maps" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
     </main>
 
