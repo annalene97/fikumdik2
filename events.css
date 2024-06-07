@@ -40,7 +40,7 @@
     background-color: var(--roed);
 }
 
-.events_filter_knap .aktiv { /* Til filtrering: den aktive knap */
+.events_filter_knap.aktiv { /* Til filtrering: den aktive knap */
     color: var(--lyssand);
     background-color: var(--roed);
 }
