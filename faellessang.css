@@ -13,7 +13,7 @@
     gap: 1em;
 }
 
-.sang_tekst{
+.events_tekst{
     margin-top: 5%;
     margin-bottom: 5%;
     margin-left: 8%;
@@ -21,10 +21,11 @@
     line-height: 190%;
 }
 
-#sang_displayfont{
+#events_tilmeld_display{
     max-width: 30%;
-    margin-top: 15%;
-    margin-left: 15%;
+    margin-left: auto;
+    margin-right: 20%;
+    margin-top: 18%;
 }
 
 /* FORMS - TILMELDING */
@@ -63,15 +64,18 @@ button {
     border-radius: 8px;
     font-size: 1em;
     cursor: pointer;
+    margin-bottom: 5%;
 }
 
 button:hover {
     background-color: var(--morkblaa);
 }
 
-#events_viser{
-    max-width: 50%;
-    /* placer display font! */
+#events_maps_display{
+    max-width: 40%;
+    margin-left: auto;
+    margin-top: 12%;
+    margin-right: 5%;
 }
 
 .events_maps_container{
@@ -82,7 +86,9 @@ button:hover {
     overflow: hidden;
 }
 
-/* MEDIA QUERIE */ 
+/* ---------------
+   MEDIA QUERIE 
+-----------------*/ 
 @media screen and (min-width: 1024px) {
     .events_banner{
         margin-top: -5%;
@@ -99,9 +105,19 @@ button:hover {
         margin-right: 20%;
     }
 
+    #events_tilmeld_display{
+        max-width: 18%;
+        margin-right: 30%;
+    }
+
     .forms_container{
         width: 40%;
         margin-left: 31%;
         margin-top: 5%;
+    }
+
+    #events_maps_display{
+        max-width: 23%;
+    
     }
 }
