@@ -64,6 +64,8 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 1px 3px 6px grey;
+    transition: all 1.5s; /* Til JS */ 
+    opacity: 0;
 }
 
 .events_navn {
@@ -113,6 +115,16 @@
 
 /*-- STYLING AF ON SCROLL EFFEKT -- */
 
+/* .event_boks_mobil2{
+    transition: all 1.5s;
+    opacity: 0;
+}
+
+.event_boks_mobil5{
+    transition: all 1.5s;
+    opacity: 0;
+}
+
 .event_boks_mobil3{
     transition: all 1.5s;
     opacity: 0;
@@ -121,7 +133,7 @@
 .event_boks_mobil4{
     transition: all 1.5s;
     opacity: 0;
-}
+} */
 
 
 /* -------------------------------------------------
@@ -230,5 +242,4 @@
     .events_dato, .events_kategori, .events_pris {
         font-size: 1em;
     }
-
-    }
+}
