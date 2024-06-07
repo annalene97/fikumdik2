@@ -62,6 +62,7 @@ button {
 
 button:hover {
     background-color: var(--morkblaa);
+    transition: ease 0.5s;
 }
 
 .foredrag_illustration{
@@ -105,10 +106,14 @@ button:hover {
         margin-top: 5%;
     }
 
-    #foredrag_viser{
+    button {
+        font-size: 1em;
+    }
+
+    #eventviser{
         display: flex;
-        align-items: flex-end;
-        margin: 2em 6em 1em;
-        max-width: 50%;
+        justify-content: right;
+        align-items: right;
+        width: 50%;
     }
 }
