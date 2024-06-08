@@ -68,6 +68,10 @@
     opacity: 0;
 }
 
+.events_boks.skjult {
+    display: none;
+}
+
 .events_navn {
     display: flex;
     flex-direction: column;

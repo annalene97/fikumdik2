@@ -91,12 +91,12 @@
 
             <div class="events_filtrering">
                 <h4 class="events_h4">FIND DIT ØNSKEDE EVENT</h4>
-                <button class="events_filter_knap aktiv">ALLE EVENTS</button>
-                <button class="events_filter_knap ">KONCERTER</button>
-                <button class="events_filter_knap">QUIZ OG SPIL</button>
-                <button class="events_filter_knap">FÆLLESSPISNING</button>
-                <button class="events_filter_knap">FÆLLESSANG</button>
-                <button class="events_filter_knap">TALKS</button>
+                <button class="events_filter_knap aktiv" data-filter="alle">ALLE EVENTS</button>
+                <button class="events_filter_knap" data-filter="koncerter">KONCERTER</button>
+                <button class="events_filter_knap" data-filter="quizogspil">QUIZ OG SPIL</button>
+                <button class="events_filter_knap" data-filter="faellesspisning">FÆLLESSPISNING</button>
+                <button class="events_filter_knap" data-filter="faellessang">FÆLLESSANG</button>
+                <button class="events_filter_knap" data-filter="talks">TALKS</button>
             </div>
 
             <!--KUNSTNERE EVENT KORT -->
@@ -104,7 +104,7 @@
             <!-- Række 1 -->
             <section class="events_container">
                 <!-- Jonas Ringved - koncert -->
-                <div class="events_boks event_boks_mobil1">
+                <div class="events_boks event_boks_mobil1" data-kategori="koncerter">
                     <a href="jonasringtved.html">
                         <img class="events_img" src="/img/eventsimg/jonasband.jpg" alt="Jonas Ringtved & Band">
                         <div class="events_navn">
@@ -122,7 +122,7 @@
                 </div>
 
                 <!-- Musikquiz - quiz -->
-                <div class="events_boks event_boks_mobil2">
+                <div class="events_boks event_boks_mobil2" data-kategori="quizogspil">
                     <a href="quiz.html">
                         <img class="events_img" src="/img/eventsimg/quiz.jpg" alt="Quiz-event">
                         <div class="events_navn">
@@ -140,7 +140,7 @@
                 </div>
 
                 <!-- Rasmus - koncert -->
-                <div class="events_boks event_boks_mobil2">
+                <div class="events_boks event_boks_mobil2" data-kategori="koncerter">
                     <a href="fejl.html">
                         <img class="events_img" src="/img/eventsimg/rasmusband.jpg" alt="Rasmus Matthiesen & Band">
                         <div class="events_navn">
@@ -158,7 +158,7 @@
                 </div>
 
                 <!-- Anders Agger - talks -->
-                <div class="events_boks event_boks_mobil2">
+                <div class="events_boks event_boks_mobil2" data-kategori="talks">
                     <a href="foredrag.html">
                         <img class="events_img" src="/img/eventsimg/foredrag.jpg" alt="Foredrag">
                         <div class="events_navn">
@@ -176,7 +176,7 @@
                 </div>
 
                 <!-- Så det sommer - fællesspisning -->
-                <div class="events_boks event_boks_mobil2">
+                <div class="events_boks event_boks_mobil2" data-kategori="faellesspisning">
                     <a href="#">
                         <img class="events_img" src="/img/eventsimg/faellesspisning.jpg" alt="Fællesspisning">
                         <div class="events_navn">
@@ -194,7 +194,7 @@
                 </div>
 
                 <!-- Fællessang -->
-                <div class="events_boks event_boks_mobil2">
+                <div class="events_boks event_boks_mobil2" data-kategori="faellessang">
                     <a href="faellessang.html">
                         <img class="events_img" src="/img/eventsimg/faellessang.jpg" alt="Fællessang">
                         <div class="events_navn">
@@ -212,7 +212,7 @@
                 </div>
 
                 <!-- Filmquiz -->
-                <div class="events_boks event_boks_mobil3">
+                <div class="events_boks event_boks_mobil3" data-kategori="quizogspil">
                     <a href="fejl.html">
                         <img class="events_img" src="/img/eventsimg/quiz.jpg" alt="Filmquiz">
                         <div class="events_navn">
@@ -230,7 +230,7 @@
                 </div>
 
                 <!-- Fikumdik radio -->
-                <div class="events_boks event_boks_mobil3">
+                <div class="events_boks event_boks_mobil3" data-kategori="talks">
                     <a href="fejl.html">
                         <img class="events_img" src="/img/eventsimg/fikumdikradio.jpg" alt="Fikumdik radio">
                         <div class="events_navn">
@@ -248,7 +248,7 @@
                 </div>
 
                 <!-- Musikquiz - quiz -->
-                <div class="events_boks event_boks_mobil3">
+                <div class="events_boks event_boks_mobil3" data-kategori="quizogspil">
                     <a href="fejl.html">
                         <img class="events_img" src="/img/eventsimg/quiz.jpg" alt="Quiz-event">
                         <div class="events_navn">
@@ -266,7 +266,7 @@
                 </div>
 
                 <!-- Banko - quiz -->
-                <div class="events_boks event_boks_mobil4">
+                <div class="events_boks event_boks_mobil4" data-kategori="quizogspil">
                     <a href="fejl.html">
                         <img class="events_img" src="/img/eventsimg/banko.jpg" alt="Quiz-event">
                         <div class="events_navn">
@@ -284,7 +284,7 @@
                 </div>
 
                 <!-- go sommer - fællesspisning -->
-                <div class="events_boks event_boks_mobil4">
+                <div class="events_boks event_boks_mobil4" data-kategori="faellesspisning">
                     <a href="fejl.html">
                         <img class="events_img" src="/img/eventsimg/faellesspisning.jpg" alt="Fællesspisning">
                         <div class="events_navn">
@@ -302,7 +302,7 @@
                 </div>
 
                 <!-- Christan Hede - koncert -->
-                <div class="events_boks event_boks_mobil4">
+                <div class="events_boks event_boks_mobil4" data-kategori="koncerter">
                     <a href="fejl.html">
                         <img class="events_img" src="/img/eventsimg/christianhede.jpg" alt="Christian Hede og Nikolaj Heyman">
                         <div class="events_navn">
@@ -320,7 +320,7 @@
                 </div>
 
                 <!-- Mek pek - koncert -->
-                <div class="events_boks event_boks_mobil5">
+                <div class="events_boks event_boks_mobil5" data-kategori="koncerter">
                     <a href="fejl.html">
                         <img class="events_img" src="/img/eventsimg/mekpek.jpg" alt="Mek Pek">
                         <div class="events_navn">
@@ -338,7 +338,7 @@
                 </div>
 
                 <!-- Tobias - koncert -->
-                <div class="events_boks event_boks_mobil5">
+                <div class="events_boks event_boks_mobil5" data-kategori="koncerter">
                     <a href="fejl.html">
                         <img class="events_img" src="/img/eventsimg/tobiastrier.jpg" alt="Tobias Trier's orkester">
                         <div class="events_navn">
@@ -356,7 +356,7 @@
                 </div>
 
                 <!-- Poul Krebs - koncert -->
-                <div class="events_boks event_boks_mobil5">
+                <div class="events_boks event_boks_mobil5" data-kategori="koncerter">
                     <a href="fejl.html">
                         <img class="events_img" src="/img/eventsimg/poulkrebs.jpg" alt="Poul Krebs">
                         <div class="events_navn">

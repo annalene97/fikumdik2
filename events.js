@@ -27,8 +27,44 @@ function fadeInEventBoks(elements) {
         let element_info = element.getBoundingClientRect(); // for hvert plads i for-loopet får funktionen elementets placering ift. viewport
 
         // Hvis topplaceringen er mindre end vinduets højde minus 250 (for at kunne se rækkerne fade ind, skal opacity sættes til 1)
-        if (element_info.top < window.innerHeight - 250) {
+        if (element_info.top < window.innerHeight - 150) {
             element.style.opacity = "1";
         }
     }
 }
+
+
+/* Filtreringsknapper */
+    // Her henter vi alle knapper og dernæst alle event-kort
+    const filterKnapper = document.querySelectorAll('.events_filter_knap');
+    const events = document.querySelectorAll('.events_boks');
+
+    // Her giver vi knapperne en onclick funktion
+    filterKnapper.forEach(knap => {
+        knap.addEventListener('click', () => {
+            const filter = knap.getAttribute('data-filter');
+            
+            //Når vi trykker på en knap, filtøjes classen 'aktiv', der er stylet i css
+            filterKnapper.forEach(knp => {
+                knp.classList.toggle('aktiv', knp === knap);
+
+                if (knp !== knap) { //alle andre knapper end den klikkede knap får fjernet classen 'aktiv', hvis den er eksisterer.
+                    knp.classList.remove('aktiv');
+                }
+            });
+            
+            // Vi ønsker at vise en bestemt event kategori, når vi trykker på den korresponderende knap
+            events.forEach(event => {
+                if (filter === 'alle') { //Hvis knappen har data-filteret 'alle', vises alle events (Dette er sidens start tilstand)
+                    event.classList.remove('skjult');
+                } else {
+                    const kategori = event.getAttribute('data-kategori');
+                    if (kategori === filter) { // Her parrer vi knappernes data-filter attribut med event-kortenes date-kategori. Hvis de matcher vises de, hvis ikke skjules de.
+                        event.classList.remove('skjult');
+                    } else {
+                        event.classList.add('skjult');
+                    }
+                }
+            });
+        });
+    });
