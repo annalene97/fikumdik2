@@ -15,8 +15,14 @@ function menuAktiv () {
     // Vi vil gerne være sikre på, at alle dropwdown-menuer er lukkede, når vi lukker vores menu
     if (menu.classList.contains('aktiv') === false) { 
         submenuListe.forEach(submenu => { 
-            submenu.querySelector('.dropdown').style.display = 'none';
-        }); //Hvis menuen IKKE har classen 'aktiv, går scriptet igennem hver submenu og finder .dropdown og ændrer displayet til none
+            submenu.querySelector('.dropdown').style.display = 'none'; //Hvis menuen IKKE har classen 'aktiv, går scriptet igennem hver submenu og finder .dropdown og ændrer displayet til none
+
+            const ikon = submenu.querySelector('i'); // RETTELSE: nu går alle pile tilbage til startposition, når menuen lukkes
+            if (ikon) {
+                ikon.classList.remove('fa-chevron-up');
+                ikon.classList.add('fa-chevron-down');
+            }
+        }); 
     }
 }
 
