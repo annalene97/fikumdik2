@@ -23,6 +23,17 @@
     margin-right: 5%;
 }
 
+.forms_tilmeld {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#event_tilmeld {
+    width: 50%;
+}
+
 .forms_container{
     width: 100%;
     margin-top: 8%;
