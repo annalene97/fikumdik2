@@ -144,8 +144,11 @@ button:hover {
         margin-top: 5%;
     }
 
-    button {
+    .button_container {
+        display: flex;
+        justify-content: center;
         font-size: 1em;
+
     }
 
     #eventviser{
