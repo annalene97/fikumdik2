@@ -109,7 +109,14 @@ button:hover {
         margin-right: 20%;
     }
 
+    .forms_tilmeld {
+        display: flex;
+        justify-content: center;
+    }
 
+    .forms_tilmeld img {
+        width: 40%;
+    }
 
     .forms_container{
         width: 40%;

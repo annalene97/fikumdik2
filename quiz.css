@@ -16,12 +16,43 @@
     padding-top: 0.5rem;
 }
 
-.foredrag_wrapper p{
-    padding-top: 2.5rem;
-    font-weight: 400;
+.quiz_wrapper{
+    padding-top: 3rem;
     margin-left: 5%;
     margin-right: 5%;
 }
+
+.quiz_wrapper p {
+    font-weight: 400;
+}
+
+.quiz_dot {
+    height: 8px;
+    width: 8px;
+    vertical-align: middle;
+    background-color: var(--roed);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.quiz_wrapper h4 {
+    padding-left: 3px;
+    font-weight: 550;
+}
+
+
+.forms_tilmeld {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#event_tilmeld {
+    width: 50%;
+}
+
 
 .forms_container{
     width: 100%;
@@ -91,11 +122,20 @@ button:hover {
         margin: 2%;
     }
 
-    .foredrag_wrapper{
+    .quiz_wrapper{
         margin-top: 2%;
         align-items: center;
         margin-left: 20%;
         margin-right: 20%;
+    }
+
+    .forms_tilmeld {
+        display: flex;
+        justify-content: center;
+    }
+
+    .forms_tilmeld img {
+        width: 40%;
     }
 
     .forms_container{
