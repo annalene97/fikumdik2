@@ -1,4 +1,4 @@
-#foredrag_banner img{
+#quiz_banner img{
     width: 100%;
     height: 70%;
 }
@@ -114,7 +114,7 @@ button:hover {
 
 /* MEDIA QUIERIE */ 
 @media screen and (min-width: 1024px) {
-    #foredrag_banner img{
+    #quiz_banner img{
         margin-bottom: -5%;
     }
 
