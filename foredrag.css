@@ -71,6 +71,11 @@ button {
     cursor: pointer;
 }
 
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+}
+
 button:hover {
     background-color: var(--morkblaa);
     transition: ease 0.5s;
@@ -96,6 +101,10 @@ button:hover {
 @media screen and (min-width: 1024px) {
     #event_overskrift{
         margin: 2%;
+    }
+
+    .sang_dato {
+        font-size: large;
     }
 
     .foredrag_wrapper{
@@ -127,10 +136,14 @@ button:hover {
 
     }
 
-    #eventviser{
+    .foredrag_illustration {
         display: flex;
-        justify-content: right;
-        align-items: right;
+        justify-content: flex-end;
+    }
+
+    #event_viser {
+        display: flex;
+        justify-content:flex-end;
         width: 50%;
     }
 }

@@ -4,7 +4,7 @@
 }
 
 #event_overskrift {
-    padding-top: 1.5rem;
+    padding-top: 0.5rem;
 }
 
 .sang_dato {
@@ -17,7 +17,7 @@
 }
 
 .quiz_wrapper{
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -116,6 +116,10 @@ button:hover {
 @media screen and (min-width: 1024px) {
     #event_overskrift{
         margin: 2%;
+    }
+
+    .sang_dato {
+        font-size: large;
     }
 
     .quiz_wrapper{
