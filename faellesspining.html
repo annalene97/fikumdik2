@@ -94,17 +94,17 @@
 
         <!-- UNDEROVERSKRIFT -->
         <div class="sang_dato">
-            <h2>14. JUNI</h2>
+            <h3>14. JUNI</h3>
             <span class="kunstner_dot"></span>
-            <h2>KL. 18.30 - 21.30</h2>
+            <h3>KL. 18.30 - 21.30</h3>
             <span class="kunstner_dot"></span>
-            <h2>125 DKK</h2>
+            <h3>125 DKK</h3>
         </div>
 
         <!-- BRØDTEKST -->
 
         <p class="spisning_tekst">
-            Aftenens tema er “Så det’ SOMMER” - vi håber selvfølgelig, det danske vejr er enig.
+            Aftenens tema er “Så det’ SOMMER” - vi håber selvfølgelig, det danske vejr er enig. <br>
             <br>
             Her hos Fikumdik elsker vi fællesskab og mums mad. Derfor inviterer vi til den helt store
             fællesspisning. Til fællesspisning dækker vi op til 50 personer i vores hyggelige gamle Falck
@@ -113,7 +113,7 @@
         </p>
 
 
-
+        <br>
         <div id="spisning_punkt_tekst" class="spisning_tekst">
             <section>
                 <p>
@@ -139,22 +139,23 @@
                 </p>
             </section>
         </div>
+        <br>
 
         <p class="spisning_tekst">
             Vi går op i god kvalitet. Derfor indeholder menuen altid de mest fantastiske lokale råvarer med bl.a
-            bagværk fra Jeremys bageri i Åbyhøj og en tår kaf’ til desserten fra Stillers Coffee. Menuen til
-            disse
+            bagværk fra Jeremys bageri i Åbyhøj og en tår kaf’ til desserten fra Stillers Coffee.
+            <br>Menuen til disse
             fantastiske aftener finder I til sidst på siden og er tilgængeligt to uger før det afholdes, så du
-            og
-            alle, du kender, kan se, hvad denne aften indebærer af lækre smovserier. <br><br>
+            og alle, du kender, kan se, hvad denne aften indebærer af lækre smovserier. <br><br>
 
 
             Så tag dine venner, familie eller bekendte under armen og lad os sammen nyde en aften i godt selskab
             og
-            med lækker mad. Hvem ved, måske falder du i snak med en ny ven… ;) 
+            med lækker mad. Hvem ved, måske falder du i snak med en ny ven… ;)  <br>
 
-
+            <br>
             Arrangementet er fast og afholdes hver 2. fredag hver anden måned.
+            <br><br>
 
         </p>
         </div>
@@ -168,18 +169,33 @@
         <div id="events_tilmeld_display"><img src="img/displayfont/tilmeld.png" alt="Display font"></div>
 
         <div class="forms_container">
-            <form>
-                <input type="text" name="input1" placeholder="Emne...">
+            <form id="form">
+                <span id="navn_fejl" class="fejl">*Udfyld fulde navn</span> <!-- fejlbesked som vises ved JaveScript -->
+                <input id="navn" type="text" name="navn" placeholder="Fulde navn...">
 
-                <input type="text" name="input2" placeholder="Fulde navn...">
+                <span id="mail_fejl" class="fejl">*Udfyld email</span> <!-- fejlbesked som vises ved JaveScript -->
+                <input id="mail" type="email" name="email" placeholder="Mail...">
 
-                <input type="text" name="input3" placeholder="Mail...">
+                <span id="antal_fejl" class="fejl">*Udfyld antal personer</span>
+                <!-- fejlbesked som vises ved JaveScript -->
+                <select name="antal" id="antal">
+                    <option value="1">Vælg antal
+                    </option>
+                    <option value="1">1</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                    <option value="1">4</option>
+                    <option value="1">5</option>
+                    <option value="1">6</option>
+                </select>
 
-                <textarea name="input4" placeholder="Besked..."></textarea>
+                <span id="besked_fejl" class="fejl">*Udfyld besked</span> <!-- fejlbesked som vises ved JaveScript -->
+                <textarea id="besked" name="besked" placeholder="Besked..."></textarea>
 
                 <button type="submit">Send</button>
             </form>
         </div>
+
 
         <div id="events_maps_display"><img src="img/displayfont/findeventether.png" alt="Find eventet her"></div>
 
