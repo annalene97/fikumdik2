@@ -29,49 +29,6 @@
     margin-top: 18%;
 }
 
-/* FORMS - TILMELDING */
-.forms_container{
-    width: 100%;
-    margin-top: 8%;
-    margin-bottom: 5%;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input, textarea {
-    margin-bottom: 5%;
-    padding: 3%;
-    border: 1px solid rgba(2, 24, 43, 0.5);
-    border-radius: 8px;
-    font-size: 1em;
-    font-family: "Jost", sans-serif;
-    box-shadow: 5px 5px 5px rgba(2, 24, 43, 0.3);
-}
-
-textarea {
-    height: 10em;
-}
-
-button {
-    padding: 3%;
-    align-self: flex-end;
-    background-color: var(--roed);
-    width: 30%;
-    color: var(--lyssand);
-    border: none;
-    border-radius: 8px;
-    font-size: 1em;
-    cursor: pointer;
-    margin-bottom: 5%;
-}
-
-button:hover {
-    background-color: var(--morkblaa);
-}
-
 #events_maps_display{
     max-width: 40%;
     margin-left: auto;

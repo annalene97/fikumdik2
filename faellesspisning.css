@@ -27,14 +27,64 @@
    margin: 2%;
 }
 
-#menu_container{
+/* styling af menu til mobil */
+#menu_mobil_container{
    display: flex;
    justify-content: center;
 }
 
-#spisning_menu{
-   max-width: 120%;
-   margin-top: 5%;
+#spisning_mobil_menu{
+   max-width: 95%;
+   margin-top: 4%;
+}
+
+/* styling af menu til desktop */
+#menu_desktop_container{
+   display: none;
+}
+
+/* FORMS - TILMELDING */
+.forms_container{
+   width: 100%;
+   margin-top: 8%;
+   margin-bottom: 5%;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+input, textarea {
+   background-color: var(--lyssand);
+   margin-bottom: 5%;
+   padding: 3%;
+   border: 2px solid rgba(2, 24, 43, 0.5);
+   border-radius: 8px;
+   font-size: 1em;
+   font-family: "Jost", sans-serif;
+   box-shadow: 5px 5px 5px rgba(2, 24, 43, 0.3);
+}
+
+textarea {
+   height: 10em;
+}
+
+button {
+   padding: 3%;
+   align-self: flex-end;
+   background-color: var(--roed);
+   width: 30%;
+   color: var(--lyssand);
+   border: none;
+   border-radius: 8px;
+   font-size: 1em;
+   cursor: pointer;
+   margin-bottom: 5%;
+}
+
+button:hover {
+   background-color: var(--morkblaa);
 }
 
 .fejl {
@@ -42,12 +92,25 @@
    display: none;
 }
 
+#navn{
+   background-color: var(--lyssand);
+}
+
+#mail{
+   background-color: var(--lyssand);
+}
+
+#besked{
+   background-color: var(--lyssand);
+}
+
 #antal{
    color: grey;
+   background-color: var(--lyssand);
    font-size: 1em;
    font-family: "Jost", sans-serif;
    padding: 4%;
-   border: 1px solid rgba(2, 24, 43, 0.5);
+   border: 2px solid rgba(2, 24, 43, 0.5);
    border-radius: 8px;
    box-shadow: 5px 5px 5px rgba(2, 24, 43, 0.3);
    margin-bottom: 5%;
@@ -66,7 +129,27 @@
    margin: 0%;
 }
 
-#spisning_menu{
-   margin-top: 2%;
+/* styling af menu til mobil --> skjuler mobil menu */
+#menu_mobil_container{
+   display: none;
 }
+
+/* styling af menu til desktop --> viser desktop menu */
+#menu_desktop_container{
+   display: flex;
+   justify-content: center;
+   max-width: 100%;
+}
+
+#spisning_desktop_menu{
+   max-width: 60%;
+}
+
+/* FORMS - TILMELDING */
+.forms_container{
+   width: 40%;
+   margin-top: 5%;
+   margin-bottom: -3%;
+}
+
 }

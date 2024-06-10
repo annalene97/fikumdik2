@@ -1,8 +1,3 @@
-#kontakt_sidetitel{
-    margin-bottom: 5%;
-    margin-top: 5%;
-}
-
 #kontakt_top_container{
     display: flex;
     flex-direction: column;
@@ -19,8 +14,67 @@
     margin-bottom: 10%;
 }
 
-#kontakt_faq_display{
+/* FAQ styling */
+.kontakt_faq_container {
+    background-color: var(--morksand);
+    padding: 1.5em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 32em;
+}
+
+.kontakt_faq {
+    width: 100%;
+}
+
+.kontakt_faq_element {
+    margin-top: 1em;
+}
+
+.kontakt_faq_element.aktiv .kontakt_faq_svar {
+    display: block;
+}
+
+.kontakt_faq_sporgsmaal {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.kontakt_faq_sporgsmaal h3 {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.kontakt_faq_svar {
     display: none;
+}
+
+.kontakt_faq_svar p {
+    font-size: 0.9em;
+    border-bottom: solid 1.5px var(--morkblaa);
+    padding: 1em 0 1em 4em;
+}
+
+/* Pile-knap til FAQ */
+.kontakt_knap {
+    border: none;
+    background-color: var(--roed);
+    color: var(--lyssand);
+    border-radius: 100%;
+    width: 2.2em;
+    height: 2.2em;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.kontakt_faq_element.aktiv .faq_knap {
+   transform: rotate(90deg);
 }
 
 /* display font ved kontaktforms*/
@@ -46,17 +100,91 @@
 }
 
 @media screen and (min-width: 1024px){
+    #kontakt_sidetitel{
+        margin-top: 2%;
+    }
+
     #kontakt_top_container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+     /* FAQ sektion */
+     .kontakt_sektion1 {
+        margin: 5em 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kontakt_faq_container1 {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 65em;
+        position: relative;
     }
 
     #kontakt_faq_display{
         display: inline;
-        width: 40%;
+        width: 35%;
         margin-left: -150%;
-        margin-bottom: -10%;
+        margin-bottom: -20%;
+    }
+
+    .kontakt_faq_container {
+        background-color: var(--morksand);
+        padding: 1.5em;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .kontakt_faq_element {
+        margin-top: 1em;
+    }
+
+    .kontakt_faq_sporgsmaal h3 {
+        font-size: 1em;
+    } 
+
+    .kontakt_faq_svar p {
+        font-size: 1em;
+    }
+
+    /* Kontakt forms */
+    #kontakt_forms_display{
+        max-width: 18%;
+        margin-left: 20%;
+        margin-top: 2%;
+        margin-bottom: 0%;
+        transform: rotate(0deg);
+    }
+
+    .kontakt_forms_container{
+        max-width: 40%;
+        margin: 0 auto;
+    }
+
+    /* Kontakt - Billede container */
+    #kontakt_img_container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        margin-top: 3%;
+        margin-bottom: 4%;
+    }
+
+    .kontakt_img_element{
+        max-width: 35%;
+        margin: 0;
     }
     
 }

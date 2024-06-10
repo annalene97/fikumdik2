@@ -1,4 +1,19 @@
-document.getElementById('form').addEventListener('submit', function(event) {
+/* ---------
+    FAQ 
+----------*/
+//Først definerer vi vores variabel
+const sporgsmaalListe = document.querySelectorAll(".kontakt_faq_element")
+
+sporgsmaalListe.forEach((sporgsmaal) => {
+    sporgsmaal.addEventListener('click', () => { //Når der trykkes på et faq spørgsmål tilføjes classen 'aktiv', der er stylet med display: 'block'
+        sporgsmaal.classList.toggle('aktiv');
+    })
+})
+
+/* -----------------
+    KONTAKT FORMS 
+------------------ */
+document.getElementById('kontakt_form').addEventListener('submit', function(event) {
     // Sørger for at den ikke indsender formen
     event.preventDefault();
     
