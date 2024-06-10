@@ -35,10 +35,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="faellessang.css"> <!-- FJERN DEN NÅR CSS er samlet!-->
     <link rel="stylesheet" href="faellesspisning.css">
+    <link rel="stylesheet" href="kontakt.css">
 
     <!-- Javascript -->
     <script defer src="script.js"></script>
     <script defer src="spisning.js"></script>
+    <script defer src="forside.js"></script>
+    <script defer src="kontakt.js"></script>
 
     <!-- Ikoner -->
     <script src="https://kit.fontawesome.com/848cbc1ae3.js" crossorigin="anonymous"></script>
@@ -85,6 +88,140 @@
     </nav>
 
     <main>
+        <!-- SIDE TITEL-->
+        <h1 id="kontakt_sidetitel">KONTAKT</h1>
+
+        <!-- Åbningstider + kontakt info-->
+        <div id="kontakt_top_container">
+            <div class="kontakt_top_element">
+                <h3>ÅBNINGSTIDER</h3> <br>
+                <dl>Mandag: 09.30-17.00</dl>
+                <dl>Tirsdag: 09.30-17.00</dl>
+                <dl>Onsdag: 09.30-17.00</dl>
+                <dl>Torsdag: 09.30-17.00</dl>
+                <dl>Fredag: 09.30-17.00</dl>
+                <dl>Lørdag: 09.00-16.00</dl>
+                <dl>Søndag: 09.30-15.00</dl>
+                <br> <br>
+                <div id="kontakt_info">
+                    <dl>Mail: fikumdikkaffe@gmail.com</dl>
+                    <dl>Tlf: 26280129</dl>
+                    <dl>Adresse: Trindsøvej 4 · 8000 Aarhus C</dl>
+                </div>
+            </div>
+
+            <!-- 
+                FAQ 
+            -->
+
+            <section class="forside_sektion3">
+                <!-- Container til faq -->
+                <div class="forside_container2">
+
+                    <div class="kontakt_top_element">
+                        <div>
+                            <img id="kontakt_faq_display" src="img/displayfont/harduspoergsmaal.png"
+                                alt="Tekst:'Har du spørgsmål?">
+                        </div>
+                        <div class="forside_faq_container">
+                            <h2>FAQ</h2>
+                            <div class="forside_faq">
+                                <!-- Spørgsmål 1 -->
+                                <div class="forside_faq_element">
+                                    <div class="forside_faq_sporgsmaal">
+                                        <button class="faq_knap">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                        <h3>Hvor mange siddepladser har I?</h3>
+                                    </div>
+                                    <div class="forside_faq_svar">
+                                        <p>Ved os kan du både nyde din købte kaffe indenfor og udendørs. Vi har 60
+                                            siddepladser
+                                            indenfor og 50 siddepladser udendørs.</p>
+                                    </div>
+                                </div>
+                                <!-- Spørgsmål 2 -->
+                                <div class="forside_faq_element">
+                                    <div class="forside_faq_sporgsmaal">
+                                        <button class="faq_knap">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                        <h3>Må jeg tage min hund med?</h3>
+                                    </div>
+                                    <div class="forside_faq_svar">
+                                        <p>Din firbenede ven er altid velkommen hos os hvis i finder en god plads
+                                            udenfor.</p>
+                                    </div>
+                                </div>
+                                <!-- Spørgsmål 3 -->
+                                <div class="forside_faq_element">
+                                    <div class="forside_faq_sporgsmaal">
+                                        <button class="faq_knap">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                        <h3>Kan jeg studere eller arbejde på Fikumdik?</h3>
+                                    </div>
+                                    <div class="forside_faq_svar">
+                                        <p>På Fikumdik har vi masser af plads og luft omkring bordene. Derfor er det et
+                                            helt
+                                            oplagt sted at studere eller arbejde. Derudover har vi selvfølgelig også
+                                            plads til
+                                            at oplade diverse devices.</p>
+                                    </div>
+                                </div>
+                                <!-- Spørgsmål 4 -->
+                                <div class="forside_faq_element">
+                                    <div class="forside_faq_sporgsmaal">
+                                        <button class="faq_knap">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                        <h3>Hvordan lejer jeg en hal?</h3>
+                                    </div>
+                                    <div class="forside_faq_svar">
+                                        <p>Vi udlejer vores gamle Falck halle til alle livets begivenheder. Det er kun
+                                            fantasien
+                                            der sætter grænser for hvad der er muligt! I er velkommen til at kontakte os
+                                            <span><a href="#">her</a></span></p>
+                                    </div>
+                                </div>
+                                <!-- Spørgsmål 5 -->
+                                <div class="forside_faq_element">
+                                    <div class="forside_faq_sporgsmaal">
+                                        <button class="faq_knap">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                        <h3>Hvad koster en plads i kontorfællesskabet?</h3>
+                                    </div>
+                                    <div class="forside_faq_svar">
+                                        <p>Vi udlejer både åbne og lukkede kontorpladser, hvor du har mdivighed for at
+                                            sætte dit
+                                            eget præg på pladsen. Prisen for åben kontorplads er 1500,- ex moms i
+                                            måneden.
+                                            Prisen for en lukket kontorplads er 2200,- ex moms om måneden.</p>
+                                    </div>
+                                </div>
+                                <!-- Spørgsmål 6 -->
+                                <div class="forside_faq_element">
+                                    <div class="forside_faq_sporgsmaal">
+                                        <button class="faq_knap">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                        <h3>Hvor køber jeg billet til jeres events?</h3>
+                                    </div>
+                                    <div class="forside_faq_svar">
+                                        <p>Se vores mange fede events på linket <span><a
+                                                    href="events.html">her</a></span> Der
+                                            er link til billetsalg under hvert event</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        </div>
+
+        <img id="kontakt_forms_display" src="img/displayfont/kontaktosher.png" alt="display font: kontakt os her">
         <!-- Kontakt formular -->
         <div class="forms_container">
             <form id="form">
@@ -103,6 +240,18 @@
                 <button type="submit">Send</button>
             </form>
         </div>
+
+        <div id="kontakt_img_container">
+            <div class="kontakt_img_element">
+                <img src="img/kontakt/favner_galleri_falk.jpg" alt="Falk haller">
+            </div>
+
+            <div class="kontakt_img_element">
+                <img src="img/kontakt/kontakt_cykel.jpg" alt="Fikumdik kaffe cykel">
+            </div>
+        </div>
+
+
     </main>
 
     <!--FOOTER START-->

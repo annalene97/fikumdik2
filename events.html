@@ -14,7 +14,8 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="Fikumdik">
         <meta property="og:site_name" content="Events">
-        <meta name="description" content="Her kan du se hvilke events der er i vente, hvor du mulighed for at læse om musikerne og købe billetter. Tag alle dem du kender i hånden og kom. Vi ses i garagen">
+        <meta name="description"
+            content="Her kan du se hvilke events der er i vente, hvor du mulighed for at læse om musikerne og købe billetter. Tag alle dem du kender i hånden og kom. Vi ses i garagen">
         <meta name="author" content="Anna Lene Rasmussen, Emma Yde Jespersen, Caroline Kristine Borup, Søren Duong">
         <meta name="geo.placename" content="Aarhus">
         <meta property="og:image" content="/img/logo.png">
@@ -83,296 +84,300 @@
         </nav>
 
 
-            <!--SIDETITEL-->
-            <div class="events_intro">
-                <h1 class="events_h1">EVENTS</h1>
-                <h4>Hos Fikumdik er vi vilde med at samle folk. Vi afholder derfor løbende forskellige events, som du kan være med til. Om du er til koncerter, foredrag eller fællesskrål, så har vi et event for dig. For os er alder bare et tal, så alle er velkomne. Så ta´endelig din tante, din kollega eller grandfætter under armen og vær med. Tjek vores kommende events ud her!</h4>
+        <!--SIDETITEL-->
+        <div class="events_intro">
+            <h1 class="events_h1">EVENTS</h1>
+            <h4>Hos Fikumdik er vi vilde med at samle folk. Vi afholder derfor løbende forskellige events, som du kan
+                være med til. Om du er til koncerter, foredrag eller fællesskrål, så har vi et event for dig. For os er
+                alder bare et tal, så alle er velkomne. Så ta´endelig din tante, din kollega eller grandfætter under
+                armen og vær med. Tjek vores kommende events ud her!</h4>
+        </div>
+
+        <div class="events_filtrering">
+            <h4 class="events_h4">FIND DIT ØNSKEDE EVENT</h4>
+            <button class="events_filter_knap aktiv" data-filter="alle">ALLE EVENTS</button>
+            <button class="events_filter_knap" data-filter="koncerter">KONCERTER</button>
+            <button class="events_filter_knap" data-filter="quizogspil">QUIZ OG SPIL</button>
+            <button class="events_filter_knap" data-filter="faellesspisning">FÆLLESSPISNING</button>
+            <button class="events_filter_knap" data-filter="faellessang">FÆLLESSANG</button>
+            <button class="events_filter_knap" data-filter="talks">TALKS</button>
+        </div>
+
+        <!--KUNSTNERE EVENT KORT -->
+
+        <!-- Række 1 -->
+        <section class="events_container">
+            <!-- Jonas Ringved - koncert -->
+            <div class="events_boks event_boks_mobil1" data-kategori="koncerter">
+                <a href="jonasringtved.html">
+                    <img class="events_img" src="/img/eventsimg/jonasband.jpg" alt="Jonas Ringtved & Band">
+                    <div class="events_navn">
+                        <h2>JONAS RINGTVED & BAND</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">31/5</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">KONCERT</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">175,-</p>
+                        </div>
+                    </div>
+                </a>
             </div>
 
-            <div class="events_filtrering">
-                <h4 class="events_h4">FIND DIT ØNSKEDE EVENT</h4>
-                <button class="events_filter_knap aktiv" data-filter="alle">ALLE EVENTS</button>
-                <button class="events_filter_knap" data-filter="koncerter">KONCERTER</button>
-                <button class="events_filter_knap" data-filter="quizogspil">QUIZ OG SPIL</button>
-                <button class="events_filter_knap" data-filter="faellesspisning">FÆLLESSPISNING</button>
-                <button class="events_filter_knap" data-filter="faellessang">FÆLLESSANG</button>
-                <button class="events_filter_knap" data-filter="talks">TALKS</button>
+            <!-- Musikquiz - quiz -->
+            <div class="events_boks event_boks_mobil2" data-kategori="quizogspil">
+                <a href="quiz.html">
+                    <img class="events_img" src="/img/eventsimg/quiz.jpg" alt="Quiz-event">
+                    <div class="events_navn">
+                        <h2>MUSIKQUIZ</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">3/6</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">QUIZ OG SPIL</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">55,-</p>
+                        </div>
+                    </div>
+                </a>
             </div>
 
-            <!--KUNSTNERE EVENT KORT -->
-
-            <!-- Række 1 -->
-            <section class="events_container">
-                <!-- Jonas Ringved - koncert -->
-                <div class="events_boks event_boks_mobil1" data-kategori="koncerter">
-                    <a href="jonasringtved.html">
-                        <img class="events_img" src="/img/eventsimg/jonasband.jpg" alt="Jonas Ringtved & Band">
-                        <div class="events_navn">
-                            <h2>JONAS RINGTVED & BAND</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">31/5</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">KONCERT</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">175,-</p>
-                            </div>
+            <!-- Rasmus - koncert -->
+            <div class="events_boks event_boks_mobil2" data-kategori="koncerter">
+                <a href="fejl.html">
+                    <img class="events_img" src="/img/eventsimg/rasmusband.jpg" alt="Rasmus Matthiesen & Band">
+                    <div class="events_navn">
+                        <h2>RASMUS MATTHIESEN <br>& BAND</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">7/6</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">KONCERT</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">175,-</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <!-- Musikquiz - quiz -->
-                <div class="events_boks event_boks_mobil2" data-kategori="quizogspil">
-                    <a href="quiz.html">
-                        <img class="events_img" src="/img/eventsimg/quiz.jpg" alt="Quiz-event">
-                        <div class="events_navn">
-                            <h2>MUSIKQUIZ</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">3/6</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">QUIZ OG SPIL</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">55,-</p>
-                            </div>
+            <!-- Anders Agger - talks -->
+            <div class="events_boks event_boks_mobil2" data-kategori="talks">
+                <a href="foredrag.html">
+                    <img class="events_img" src="/img/eventsimg/foredrag.jpg" alt="Foredrag">
+                    <div class="events_navn">
+                        <h2>ANDERS AGGER</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">11/6</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">TALKS</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">200,-</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <!-- Rasmus - koncert -->
-                <div class="events_boks event_boks_mobil2" data-kategori="koncerter">
-                    <a href="fejl.html">
-                        <img class="events_img" src="/img/eventsimg/rasmusband.jpg" alt="Rasmus Matthiesen & Band">
-                        <div class="events_navn">
-                            <h2>RASMUS MATTHIESEN <br>& BAND</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">7/6</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">KONCERT</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">175,-</p>
-                            </div>
+            <!-- Så det sommer - fællesspisning -->
+            <div class="events_boks event_boks_mobil2" data-kategori="faellesspisning">
+                <a href="faellesspining.html">
+                    <img class="events_img" src="/img/eventsimg/faellesspisning.jpg" alt="Fællesspisning">
+                    <div class="events_navn">
+                        <h2>SÅ' DET SOMMER</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">14/6</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">FÆLLESSPISNING</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">125,-</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <!-- Anders Agger - talks -->
-                <div class="events_boks event_boks_mobil2" data-kategori="talks">
-                    <a href="foredrag.html">
-                        <img class="events_img" src="/img/eventsimg/foredrag.jpg" alt="Foredrag">
-                        <div class="events_navn">
-                            <h2>ANDERS AGGER</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">11/6</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">TALKS</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">200,-</p>
-                            </div>
+            <!-- Fællessang -->
+            <div class="events_boks event_boks_mobil2" data-kategori="faellessang">
+                <a href="faellessang.html">
+                    <img class="events_img" src="/img/eventsimg/faellessang.jpg" alt="Fællessang">
+                    <div class="events_navn">
+                        <h2>FÆLLESSKRÅL</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">18/6</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">FÆLLESSANG</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">GRATIS</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <!-- Så det sommer - fællesspisning -->
-                <div class="events_boks event_boks_mobil2" data-kategori="faellesspisning">
-                    <a href="#">
-                        <img class="events_img" src="/img/eventsimg/faellesspisning.jpg" alt="Fællesspisning">
-                        <div class="events_navn">
-                            <h2>SÅ' DET SOMMER</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">14/6</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">FÆLLESSPISNING</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">125,-</p>
-                            </div>
+            <!-- Filmquiz -->
+            <div class="events_boks event_boks_mobil3" data-kategori="quizogspil">
+                <a href="fejl.html">
+                    <img class="events_img" src="/img/eventsimg/quiz.jpg" alt="Filmquiz">
+                    <div class="events_navn">
+                        <h2>FILMQUIZ</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">20/6</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">QUIZ OG SPIL</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">55,-</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <!-- Fællessang -->
-                <div class="events_boks event_boks_mobil2" data-kategori="faellessang">
-                    <a href="faellessang.html">
-                        <img class="events_img" src="/img/eventsimg/faellessang.jpg" alt="Fællessang">
-                        <div class="events_navn">
-                            <h2>FÆLLESSKRÅL</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">18/6</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">FÆLLESSANG</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">GRATIS</p>
-                            </div>
+            <!-- Fikumdik radio -->
+            <div class="events_boks event_boks_mobil3" data-kategori="talks">
+                <a href="fejl.html">
+                    <img class="events_img" src="/img/eventsimg/fikumdikradio.jpg" alt="Fikumdik radio">
+                    <div class="events_navn">
+                        <h2>FIKUMDIK RADIO</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">28/6</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">TALKS</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">40,-</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <!-- Filmquiz -->
-                <div class="events_boks event_boks_mobil3" data-kategori="quizogspil">
-                    <a href="fejl.html">
-                        <img class="events_img" src="/img/eventsimg/quiz.jpg" alt="Filmquiz">
-                        <div class="events_navn">
-                            <h2>FILMQUIZ</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">20/6</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">QUIZ OG SPIL</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">55,-</p>
-                            </div>
+            <!-- Musikquiz - quiz -->
+            <div class="events_boks event_boks_mobil3" data-kategori="quizogspil">
+                <a href="fejl.html">
+                    <img class="events_img" src="/img/eventsimg/quiz.jpg" alt="Quiz-event">
+                    <div class="events_navn">
+                        <h2>NATURQUIZ</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">8/7</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">QUIZ OG SPIL</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">55,-</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <!-- Fikumdik radio -->
-                <div class="events_boks event_boks_mobil3" data-kategori="talks">
-                    <a href="fejl.html">
-                        <img class="events_img" src="/img/eventsimg/fikumdikradio.jpg" alt="Fikumdik radio">
-                        <div class="events_navn">
-                            <h2>FIKUMDIK RADIO</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">28/6</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">TALKS</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">40,-</p>
-                            </div>
+            <!-- Banko - quiz -->
+            <div class="events_boks event_boks_mobil4" data-kategori="quizogspil">
+                <a href="fejl.html">
+                    <img class="events_img" src="/img/eventsimg/banko.jpg" alt="Quiz-event">
+                    <div class="events_navn">
+                        <h2>BANKO</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">9/7</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">QUIZ OG SPIL</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">45,-</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <!-- Musikquiz - quiz -->
-                <div class="events_boks event_boks_mobil3" data-kategori="quizogspil">
-                    <a href="fejl.html">
-                        <img class="events_img" src="/img/eventsimg/quiz.jpg" alt="Quiz-event">
-                        <div class="events_navn">
-                            <h2>NATURQUIZ</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">8/7</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">QUIZ OG SPIL</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">55,-</p>
-                            </div>
+            <!-- go sommer - fællesspisning -->
+            <div class="events_boks event_boks_mobil4" data-kategori="faellesspisning">
+                <a href="faellesspining.html">
+                    <img class="events_img" src="/img/eventsimg/faellesspisning.jpg" alt="Fællesspisning">
+                    <div class="events_navn">
+                        <h2>GO' SOMMER</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">19/7</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">FÆLLESSPISNING</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">125,-</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <!-- Banko - quiz -->
-                <div class="events_boks event_boks_mobil4" data-kategori="quizogspil">
-                    <a href="fejl.html">
-                        <img class="events_img" src="/img/eventsimg/banko.jpg" alt="Quiz-event">
-                        <div class="events_navn">
-                            <h2>BANKO</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">9/7</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">QUIZ OG SPIL</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">45,-</p>
-                            </div>
+            <!-- Christan Hede - koncert -->
+            <div class="events_boks event_boks_mobil4" data-kategori="koncerter">
+                <a href="fejl.html">
+                    <img class="events_img" src="/img/eventsimg/christianhede.jpg"
+                        alt="Christian Hede og Nikolaj Heyman">
+                    <div class="events_navn">
+                        <h2>CHRISTIAN HEDE OG NIKOLAJ HEYMAN</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">7/8</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">KONCERT</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">145,-</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <!-- go sommer - fællesspisning -->
-                <div class="events_boks event_boks_mobil4" data-kategori="faellesspisning">
-                    <a href="fejl.html">
-                        <img class="events_img" src="/img/eventsimg/faellesspisning.jpg" alt="Fællesspisning">
-                        <div class="events_navn">
-                            <h2>GO' SOMMER</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">19/7</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">FÆLLESSPISNING</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">125,-</p>
-                            </div>
+            <!-- Mek pek - koncert -->
+            <div class="events_boks event_boks_mobil5" data-kategori="koncerter">
+                <a href="fejl.html">
+                    <img class="events_img" src="/img/eventsimg/mekpek.jpg" alt="Mek Pek">
+                    <div class="events_navn">
+                        <h2>MEK PEK</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">15/8</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">KONCERT</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">145,-</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <!-- Christan Hede - koncert -->
-                <div class="events_boks event_boks_mobil4" data-kategori="koncerter">
-                    <a href="fejl.html">
-                        <img class="events_img" src="/img/eventsimg/christianhede.jpg" alt="Christian Hede og Nikolaj Heyman">
-                        <div class="events_navn">
-                            <h2>CHRISTIAN HEDE OG NIKOLAJ HEYMAN</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">7/8</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">KONCERT</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">145,-</p>
-                            </div>
+            <!-- Tobias - koncert -->
+            <div class="events_boks event_boks_mobil5" data-kategori="koncerter">
+                <a href="fejl.html">
+                    <img class="events_img" src="/img/eventsimg/tobiastrier.jpg" alt="Tobias Trier's orkester">
+                    <div class="events_navn">
+                        <h2>TOBIAS TRIERS' ORKESTER</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">5/10</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">KONCERT</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">100,-</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <!-- Mek pek - koncert -->
-                <div class="events_boks event_boks_mobil5" data-kategori="koncerter">
-                    <a href="fejl.html">
-                        <img class="events_img" src="/img/eventsimg/mekpek.jpg" alt="Mek Pek">
-                        <div class="events_navn">
-                            <h2>MEK PEK</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">15/8</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">KONCERT</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">145,-</p>
-                            </div>
+            <!-- Poul Krebs - koncert -->
+            <div class="events_boks event_boks_mobil5" data-kategori="koncerter">
+                <a href="fejl.html">
+                    <img class="events_img" src="/img/eventsimg/poulkrebs.jpg" alt="Poul Krebs">
+                    <div class="events_navn">
+                        <h2>POUL KREBS</h2>
+                        <div class="events_linje"></div>
+                        <div class="events_info">
+                            <p class="events_dato">5/12</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_kategori">KONCERT</p>
+                            <div class="events_cirkel"></div>
+                            <p class="events_pris">200,-</p>
                         </div>
-                    </a>
-                </div>
-
-                <!-- Tobias - koncert -->
-                <div class="events_boks event_boks_mobil5" data-kategori="koncerter">
-                    <a href="fejl.html">
-                        <img class="events_img" src="/img/eventsimg/tobiastrier.jpg" alt="Tobias Trier's orkester">
-                        <div class="events_navn">
-                            <h2>TOBIAS TRIERS' ORKESTER</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">5/10</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">KONCERT</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">100,-</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Poul Krebs - koncert -->
-                <div class="events_boks event_boks_mobil5" data-kategori="koncerter">
-                    <a href="fejl.html">
-                        <img class="events_img" src="/img/eventsimg/poulkrebs.jpg" alt="Poul Krebs">
-                        <div class="events_navn">
-                            <h2>POUL KREBS</h2>
-                            <div class="events_linje"></div>
-                            <div class="events_info">
-                                <p class="events_dato">5/12</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_kategori">KONCERT</p>
-                                <div class="events_cirkel"></div>
-                                <p class="events_pris">200,-</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </section>
+                    </div>
+                </a>
+            </div>
+        </section>
 
         <!--FOOTER START-->
 
@@ -431,4 +436,5 @@
             </div>
         </footer>
     </body>
+
     </html>
