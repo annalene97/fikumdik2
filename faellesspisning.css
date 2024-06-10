@@ -1,4 +1,45 @@
+.spisning_tekst{
+   margin-top: 3%;
+   margin-left: 15%;
+   margin-right: 15%;
+   font-size: 1em;
+   line-height: 1.5em;
+   font-weight: 300;
+   font-family: "Jost", sans-serif;
+}
+/*PLACERING AF PUNKT TEKST*/
+#spisning_punkt_tekst{
+   display: flex;
+   justify-content: center;
+}
+/*STYLING AF PRIKKEN*/
+.spisning_prik {
+   height: 8px;
+   width: 8px;
+   vertical-align: middle;
+   background-color: var(--roed);
+   border-radius: 50%;
+   display: inline-block;
+   margin: 2%;
+}
+
+#menu_container{
+   display: flex;
+   justify-content: center;
+}
+
 #spisning_menu{
    max-width: 120%;
-   /* positioner menu */
+   margin-top: 5%;
+}
+
+
+@media screen and (min-width: 1024px){
+   .spisning_tekst{
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 17%;
+      margin-right: 17%;
+      line-height: 190%;
+  }
 }
