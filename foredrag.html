@@ -40,6 +40,7 @@
 
     <!-- Javascript -->
     <script defer src="script.js"></script>
+    <script defer src="tilmelding_forms_modal.js"></script>
     <script defer src="forside.js"></script>
 
     <!-- Ikoner -->
@@ -155,6 +156,19 @@
 
                 <button type="submit">Send</button>
             </form>
+        </div>
+
+        <!-- MODAL -->
+        <div id="events_send_modal">
+            <div class="events_send_modal_container">
+                <img id="events_send_modal_img" src="img/eventsimg/events_sendt_ikon.png" alt="Sendt ikon">
+
+                <!-- Lukkefunktion -->
+                <!-- Her har vi brugt https://www.w3schools.com/charsets/ref_html_entities_4.asp for at lave en lukknap som kryds-->
+                <span id="lukknap_kaffe_modal">&times;</span>
+            </div>
+            <h2 id="events_send_modal_overskrift">FEDT!</h2>
+            <h4 class="events_send_modal_tekst">Din besked er sendt <br>  Vi vender tilbage hurtigst muligt </h4>
         </div>
 
 
