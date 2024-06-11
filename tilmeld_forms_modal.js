@@ -39,6 +39,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
     // Hvis alle felter er udfyldt vises alert
     // LAV EVT MODAL
     if (isValid) {
+
     //VARIABLER TIL MODAL
     // Vi finder hele event_send_modal i HTML
     const eventsSendModal = document.getElementById("events_send_modal");
