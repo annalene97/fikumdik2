@@ -33,6 +33,20 @@
     margin: 0.5em 0;
 }
 
+
+.bagom_galleri {
+    display: grid;
+    grid-template-columns:  50% 50%;
+    justify-content: center;
+    gap: 1em;
+}
+
+.bagom_galleri img{
+    width: 100%;
+    padding:5px;
+}
+
+
 /* MEDIA QUIERIE */ 
 @media screen and (min-width: 1024px) {
     #infografikmobile_wrapper {
