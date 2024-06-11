@@ -29,10 +29,17 @@
     margin: 1em 0;
 }
 
-.bagom_broedtekst h4,.bagom_broedtekst p {
+.bagom_broedtekst h4, .bagom_broedtekst p {
     margin: 0.5em 0;
 }
 
+.presse_billede {
+    margin: 3em;
+}
+
+.bagom_galleri_container {
+    margin: 4em 0 4em 0;
+}
 
 .bagom_galleri {
     display: grid;
