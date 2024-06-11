@@ -1,7 +1,14 @@
+/* ----------------------
+---- BAG OM FIKUMDIK ----
+---------------------- */
+
+/* DESKTOP VERSIONEN AF INFOGRAFIK VISES IKKE */
 
 #infografik_wrapper {
     display: none;
 }
+
+
 
 .bagomfikumdik_wrapper {
     display: flex;
@@ -22,14 +29,9 @@
     margin: 1em 0;
 }
 
-.bagom_broedtekst h4 {
+.bagom_broedtekst h4,.bagom_broedtekst p {
     margin: 0.5em 0;
 }
-
-.bagom_broedtekst p {
-    margin: 0.5em 0;
-}
-
 
 /* MEDIA QUIERIE */ 
 @media screen and (min-width: 1024px) {
