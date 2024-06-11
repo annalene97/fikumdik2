@@ -36,9 +36,32 @@ document.getElementById('form').addEventListener('submit', function(event) {
         isValid = false;
     }
 
-    // Hvis alle felter er udfyldt vises alert
-    // LAV EVT MODAL
+    // Hvis alle felter er udfyldt vises MODAL
     if (isValid) {
-        alert('Juhuuu vi glæder os til at se dig/jer!'); // LAV SJOV
+
+    //VARIABLER TIL MODAL
+    // Vi finder hele event_send_modal i HTML
+    const eventsSendModal = document.getElementById("events_send_modal");
+
+    // Vi finder send knappen
+    const sendKnap = document.getElementById("events_send_knap");
+    
+    // Vi finder <span> element som lukker Kaffe modal (bruges også til send modal)
+    const lukKaffeModal = document.getElementById("lukknap_kaffe_modal");
+
+               // Når man klikker på knappen, åbner send modalet 
+               sendKnap.onclick = function() {
+                eventsSendModal.style.display = "block";
+            }
+        
+            // Når man klikker på <span> (x / lukknap), lukker modalen
+            lukKaffeModal.onclick = function() {
+                eventsSendModal.style.display = "none";
+            }
+
+            /* FØRSTE FORSØG MED ALERT
+        alert('Juhuuu vi glæder os til at se dig/jer!'); // LAV SJOV*/ 
     }
 });
+
+

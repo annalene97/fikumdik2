@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Titel-->
-    <title>Mad og Morskab</title>
+    <title>Kontakt</title>
 
     <!--SEO-->
     <meta name="keywords"
@@ -94,18 +94,18 @@
         <div id="kontakt_top_container">
             <div class="kontakt_top_element">
                 <h3>ÅBNINGSTIDER</h3> <br>
-                <dl>Mandag: 09.30-17.00</dl>
-                <dl>Tirsdag: 09.30-17.00</dl>
-                <dl>Onsdag: 09.30-17.00</dl>
-                <dl>Torsdag: 09.30-17.00</dl>
-                <dl>Fredag: 09.30-17.00</dl>
-                <dl>Lørdag: 09.00-16.00</dl>
-                <dl>Søndag: 09.30-15.00</dl>
+                <h4>Mandag: 09.30-17.00</h4>
+                <h4>Tirsdag: 09.30-17.00</h4>
+                <h4>Onsdag: 09.30-17.00</h4>
+                <h4>Torsdag: 09.30-17.00</h4>
+                <h4>Fredag: 09.30-17.00</h4>
+                <h4>Lørdag: 09.00-16.00</h4>
+                <h4>Søndag: 09.30-15.00</h4>
                 <br> <br>
                 <div id="kontakt_info">
-                    <dl>Mail: fikumdikkaffe@gmail.com</dl>
-                    <dl>Tlf: 26280129</dl>
-                    <dl>Adresse: Trindsøvej 4 · 8000 Aarhus C</dl>
+                    <h4>Mail: fikumdikkaffe@gmail.com</h4>
+                    <h4>Tlf: 26280129</h4>
+                    <h4>Adresse: Trindsøvej 4 · 8000 Aarhus C</h4>
                 </div>
             </div>
 
@@ -216,8 +216,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
-        </div>
         </div>
 
         <img id="kontakt_forms_display" src="img/displayfont/kontaktosher.png" alt="display font: kontakt os her">
@@ -236,8 +236,21 @@
                 <span id="besked_fejl" class="fejl">*Udfyld besked</span> <!-- fejlbesked som vises ved JaveScript -->
                 <textarea id="besked" name="besked" placeholder="Besked..."></textarea>
 
-                <button type="submit">Send</button>
+                <button id="events_send_knap" type="submit">Send</button>
             </form>
+        </div>
+
+        <!-- MODAL -->
+        <div id="events_send_modal">
+            <div class="events_send_modal_container">
+                <img id="events_send_modal_img" src="img/eventsimg/events_sendt_ikon.png" alt="Sendt ikon">
+
+                <!-- Lukkefunktion -->
+                <!-- Her har vi brugt https://www.w3schools.com/charsets/ref_html_entities_4.asp for at lave en lukknap som kryds-->
+                <span id="lukknap_kaffe_modal">&times;</span>
+            </div>
+            <h2 id="events_send_modal_overskrift">FEDT!</h2>
+            <h4 class="events_send_modal_tekst">Din besked er sendt <br> Vi vender tilbage hurtigst muligt </h4>
         </div>
 
         <div id="kontakt_img_container">
