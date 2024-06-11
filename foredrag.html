@@ -40,7 +40,7 @@
 
     <!-- Javascript -->
     <script defer src="script.js"></script>
-    <script defer src="tilmelding_forms_modal.js"></script>
+    <script defer src="tilmeld_forms_modal.js"></script>
     <script defer src="forside.js"></script>
 
     <!-- Ikoner -->
@@ -154,7 +154,7 @@
                 <span id="besked_fejl" class="fejl">*Udfyld besked</span> <!-- fejlbesked som vises ved JaveScript -->
                 <textarea id="besked" name="besked" placeholder="Besked..."></textarea>
 
-                <button type="submit">Send</button>
+                <button id="events_send_knap" type="submit">Send</button>
             </form>
         </div>
 
@@ -167,8 +167,9 @@
                 <!-- Her har vi brugt https://www.w3schools.com/charsets/ref_html_entities_4.asp for at lave en lukknap som kryds-->
                 <span id="lukknap_kaffe_modal">&times;</span>
             </div>
-            <h2 id="events_send_modal_overskrift">FEDT!</h2>
-            <h4 class="events_send_modal_tekst">Din besked er sendt <br>  Vi vender tilbage hurtigst muligt </h4>
+            <h2 id="events_send_modal_overskrift">JUHUU!</h2>
+            <h4 class="events_send_modal_tekst">Du/I er nu tilmeldt</h4>
+            <p id="events_send_obs_tekst">OBS: bestaling sker ved døren</p>
         </div>
 
 
