@@ -9,12 +9,22 @@
     align-items: center;
 }
 
-.bagomfikumdik_wrapper h2 {
-    color: rgba(182, 22, 36, 1);
-}
-
 #bagomfikumdik_displayfont {
     display: none;
+}
+
+.bagom_broedtekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.bagom_broedtekst h4,
+.bagom_broedtekst p {
+    margin: 0.5em 0;
 }
 
 
@@ -27,23 +37,24 @@
     #infografik_wrapper {
         display: flex;
     }
+
+    #infografik_desk {
+        width: 100%;
+    }
     
     .bagomfikumdik_wrapper {
         display: grid;
-        grid-template-columns: 40% 15% 40%;
+        grid-template-columns: 20% 40% 20%;
     }
     
     #bagomfikumdik_displayfont {
         display: flex;
-        z-index: 10;
         width: 100%;
         justify-content: flex-start;
         padding-left: 10em;
     }
     
     .bagomfikumdik_wrapper h2 {
-        font-size: 2.5em;
         margin-top: 5em;
-        z-index: 9;
     }
 }
