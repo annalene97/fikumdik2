@@ -33,8 +33,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="faellessang.css"> <!-- FJERN DEN NÅR CSS er samlet!-->
-    <link rel="stylesheet" href="faellesspisning.css">
 
     <!-- Javascript -->
     <script defer src="script.js"></script>
@@ -60,14 +58,14 @@
             <li class="menupunkt aktiv"><a href="events.html">EVENTS</a></li>
             <li class="menupunkt submenu">BAG OM FIKUMDIK <i class="fa-solid fa-chevron-down"></i>
                 <ul class="dropdown">
-                    <li class="underpunkt"><a href="fejl.html">VORES HISTORIE</a></li>
-                    <li class="underpunkt"><a href="fejl.html">PRESSE</a></li>
+                    <li class="underpunkt"><a href="bagomfikumdik.html">VORES HISTORIE</a></li>
+                    <li class="underpunkt"><a href="bagomfikumdik.html#presse">PRESSE</a></li>
                 </ul>
             </li>
             <li class="menupunkt submenu">FIKUMDIK FAVNER <i class="fa-solid fa-chevron-down"></i>
                 <ul class="dropdown">
-                    <li class="underpunkt"><a href="fejl.html">KONTORFÆLLESSKAB</a></li>
-                    <li class="underpunkt"><a href="fejl.html">HALLERNE</a></li>
+                    <li class="underpunkt"><a href="fikumdikfavner.html#favner_kontor">KONTORFÆLLESSKAB</a></li>
+                    <li class="underpunkt"><a href="fikumdikfavner.html#favner_hal">HALLERNE</a></li>
                 </ul>
             </li>
             <li class="menupunkt submenu">KONTAKT <i class="fa-solid fa-chevron-down"></i>
@@ -104,72 +102,40 @@
 
         <!-- BRØDTEKST -->
 
-        <p class="spisning_tekst">
-            Aftenens tema er “Så det’ SOMMER” - vi håber selvfølgelig, det danske vejr er enig. <br>
-            <br>
-            Her hos Fikumdik elsker vi fællesskab og mums mad. Derfor inviterer vi til den helt store
-            fællesspisning. Til fællesspisning dækker vi op til 50 personer i vores hyggelige gamle Falck
-            lokaler,
-            hører dejlig baggrundsmusik og snakker aftenen lang i den helt perfekte atmosfære. 
-        </p>
+        <p class="events_tekst">Aftenens tema er “Så det’ SOMMER” - vi håber selvfølgelig, det danske vejr er enig. <br><br> Her hos Fikumdik elsker vi fællesskab og mums mad. Derfor inviterer vi til den helt store fællesspisning. Til fællesspisning dækker vi op til 50 personer i vores hyggelige gamle Falck lokaler, hører dejlig baggrundsmusik og snakker aftenen lang i den helt perfekte atmosfære.</p>
 
-
-        <br>
-        <div id="spisning_punkt_tekst" class="spisning_tekst">
+        <div id="spisning_punkt_tekst" class="events_tekst">
             <section>
-                <h4>
-                    Du får:</h4>
+                <h4>Du får:</h4>
 
                 <!-- Tekst i punkter -->
 
-                <div>
-                    <div class="spisning_prik"></div>
-                    2 retter - hovedret og dessert, hvor der altid er en
-                    vegetarisk
-                    mulighed<br>
+                <div class="spisning_punkter">
+                    <span class="spisning_prik"></span>
+                    <p>2 retter - hovedret og dessert, hvor der altid er en vegetarisk mulighed<br></p>
                 </div>
 
-                <div>
-                    <div class="spisning_prik"></div>1x drikkevare - vælg mellem vores lækre juices, lemonader,
-                    vin,
-                    drinks eller øl<br>
+                <div class="spisning_punkter">
+                    <span class="spisning_prik"></span>
+                    <p>1x drikkevare - vælg mellem vores lækre juices, lemonader, vin, drinks eller øl<br></p>
                 </div>
 
-                <div>
-                    <div class="spisning_prik"></div>Ekstra drikkevarer koster 20 DKK pr. drikkevare
+                <div class="spisning_punkter">
+                    <span class="spisning_prik"></span>
+                    <p>Ekstra drikkevarer koster 20 DKK pr. drikkevare</p>
                 </div>
             </section>
         </div>
-        <br>
 
-        <p class="spisning_tekst">
-            Vi går op i god kvalitet. Derfor indeholder menuen altid de mest fantastiske lokale råvarer med bl.a
-            bagværk fra Jeremys bageri i Åbyhøj og en tår kaf’ til desserten fra Stillers Coffee.
-            <br>Menuen til disse
-            fantastiske aftener finder I til sidst på siden og er tilgængeligt to uger før det afholdes, så du
-            og alle, du kender, kan se, hvad denne aften indebærer af lækre smovserier. <br><br>
-
-
-            Så tag dine venner, familie eller bekendte under armen og lad os sammen nyde en aften i godt selskab
-            og
-            med lækker mad. Hvem ved, måske falder du i snak med en ny ven… ;)  <br>
-
-            <br>
-            Arrangementet er fast og afholdes hver 2. fredag hver anden måned.
-            <br><br>
-
-        </p>
+        <p class="events_tekst"> Vi går op i god kvalitet. Derfor indeholder menuen altid de mest fantastiske lokale råvarer med bl.a bagværk fra Jeremys bageri i Åbyhøj og en tår kaf’ til desserten fra Stillers Coffee. <br>Menuen til disse fantastiske aftener finder I til sidst på siden og er tilgængeligt to uger før det afholdes, så du og alle, du kender, kan se, hvad denne aften indebærer af lækre smovserier.<br><br> Så tag dine venner, familie eller bekendte under armen og lad os sammen nyde en aften i godt selskab og med lækker mad. Hvem ved, måske falder du i snak med en ny ven… <br> <br> Arrangementet er fast og afholdes hver 2. fredag hver anden måned. <br></p>
 
         <!-- MENU TIL FÆLLESSPISNING -->
         <!-- menu til mobil-->
-        <div id="menu_mobil_container"><img id="spisning_mobil_menu"
-                src="img/fællesspisning/faellesspisning_mobil_menu.png" alt="Menu til fællesspisning">
+        <div id="menu_mobil_container"><img id="spisning_mobil_menu" src="img/fællesspisning/faellesspisning_mobil_menu.png" alt="Menu til fællesspisning">
         </div>
 
         <!-- menu til desktop -->
-        <div id="menu_desktop_container"><img id="spisning_desktop_menu"
-                src="img/fællesspisning/faellesspisning_desktop_menu.png" alt="Menu til fællesspisning"></div>
-
+        <div id="menu_desktop_container"><img id="spisning_desktop_menu" src="img/fællesspisning/faellesspisning_desktop_menu.png" alt="Menu til fællesspisning"></div>
 
         <!-- TILMELDINGS FORM -->
         <!-- Display font -->
@@ -218,15 +184,13 @@
         </div>
 
 
-        <div id="events_maps_display"><img src="img/displayfont/findeventether.png" alt="Find eventet her">
+        <div id="events_maps_display">
+            <img src="img/displayfont/findeventether.png" alt="Find eventet her">
         </div>
 
         <!--GOOGLE MAPS LOKATION VIA iFRAME-->
         <div class="kunstner_maps_container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.1838800409228!2d10.178573376772638!3d56.153925273235366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3fd2036a4e2f%3A0xe38d55aed2e854bc!2sFikumdik%20Kaffe!5e0!3m2!1sen!2sdk!4v1716211159477!5m2!1sen!2sdk"
-                width="1000" height="350" style="border:0;" allowfullscreen="" id="kunstner_maps" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.1838800409228!2d10.178573376772638!3d56.153925273235366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3fd2036a4e2f%3A0xe38d55aed2e854bc!2sFikumdik%20Kaffe!5e0!3m2!1sen!2sdk!4v1716211159477!5m2!1sen!2sdk" width="1000" height="350" style="border:0;" allowfullscreen="" id="kunstner_maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
     </main>
@@ -242,13 +206,10 @@
                 <p>Tlf: 26280129</p>
                 <div class="footer_someikoner">
                     <div class="footer_someikon">
-                        <a
-                            href="https://www.instagram.com/fikumdik_kaffe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
-                                src="img/instagramikon.png" alt="Instragram ikon"></a>
+                        <a href="https://www.instagram.com/fikumdik_kaffe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="img/instagramikon.png" alt="Instragram ikon"></a>
                     </div>
                     <div class="footer_someikon">
-                        <a href="https://www.facebook.com/fikumdikkaffe/"><img src="img/facebookikon.png"
-                                alt="Facebook ikon"></a>
+                        <a href="https://www.facebook.com/fikumdikkaffe/"><img src="img/facebookikon.png" alt="Facebook ikon"></a>
                     </div>
                 </div>
             </div>
@@ -266,19 +227,14 @@
                 <div class="footer_display">
                     <img src="img/displayfont/gaatilhvid.png" alt="Tekst: Gå til">
                 </div>
-                <iframe id="footer_maps"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.1837072426933!2d10.178573376743048!3d56.153928261024106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3fd2036a4e2f%3A0xe38d55aed2e854bc!2sFikumdik%20Kaffe!5e0!3m2!1sda!2sdk!4v1716366466735!5m2!1sda!2sdk"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe id="footer_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.1837072426933!2d10.178573376743048!3d56.153928261024106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3fd2036a4e2f%3A0xe38d55aed2e854bc!2sFikumdik%20Kaffe!5e0!3m2!1sda!2sdk!4v1716366466735!5m2!1sda!2sdk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="footer_nav">
                 <h4>HVAD SØGER DU?</h4>
                 <p><a href="madogdrikke.html#menukort">Se vores menukort</a></p>
                 <p><a href="events.html">Events hos Fikumdik</a></p>
-                <p><a href="fejl.html">Lej en af vores haller</a></p>
-                <p><a href="fejl.html">Lej en
-                        kontorplads</a>
-                </p>
+                <p><a href="fikumdikfavner.html#favner_hal">Lej en af vores haller</a></p>
+                <p><a href="fikumdikfavner.html#favner_kontor">Lej en kontorplads</a></p>
                 <p><a href="madogdrikke.html">Læs om vores råvarer</a></p>
             </div>
             <div class="footer_logo">

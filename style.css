@@ -368,6 +368,11 @@ main {
     display: none;
 }
 
+.forside_faq_svar a {
+    font-weight: 500;
+    color: var(--roed);
+}
+
 .forside_faq_svar p {
     font-size: 0.9em;
     border-bottom: solid 1.5px var(--morkblaa);
@@ -647,149 +652,377 @@ main {
 /* -------------------- 
 ------- EVENTS -------
 -------------------- */
-.events_h1 { /* EVENTS titel */
-    color: var(--roed);
-    margin: 1em 0 1em 0;
-    font-size: 2em;
+.events_intro {
     text-align: center;
+    max-width: 51em;
+    margin: 2em auto 1em;
+    padding: 0 0.5em;
 }
 
-.event_container { /*EN CONTAINER FOR ALLE EVENT-KORTENE OPSAT I GRID FOR SÆTTE DEM I 2 KOLONNER*/
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: center; /*CENTRERE ELEMENTERNE*/
-    gap: 1em;
-    row-gap: 2em;
-    padding: 20px;
-    margin: 0 auto; /* CENTRERE CONTAINEREN */
-    margin-bottom: 4em;
+.events_h1 { /* EVENTS titel */
+    margin-bottom: 0.5em;
 }
 
-.event_boks {
-    position: relative;
-    width: 100%; /* FYLDER HELE BREDDEN AF KOLONNEN */
+.events_filtrering {
+    text-align: center;
+    margin: 2em auto;
+}
+
+.events_h4 {
+    font-weight: 500;
+    margin-bottom: 0.7em;
+}
+
+.events_filter_knap {
+    font-size: 0.9em;
+    font-weight: 400;
+    padding: 0.2em 0.4em;
+    color: var(--roed);
+    background-color: var(--lyssand);
+    border: 2px solid var(--roed);
+    border-radius: 10px;
+    margin: 0.3em;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.events_filter_knap:hover {
+    color: var(--lyssand);
+    background-color: var(--roed);
+}
+
+.events_filter_knap.aktiv { /* Til filtrering: den aktive knap */
+    color: var(--lyssand);
+    background-color: var(--roed);
+}
+
+.events_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    row-gap: 3rem;
+    max-width: 80em;
+    margin: 0 auto 2em;
+    padding: 0 2em;
+}
+
+.events_boks {
+    width: 100%;
+    background-color: var(--roed);
+    max-width: 20em;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 1px 4px grey;
+    box-shadow: 1px 3px 6px grey;
+    transition: all 1.5s; /* Til JS */ 
+    opacity: 0;
 }
 
-.event_img {
-    width: 100%;
-    display: block;
+.events_boks.skjult {
+    display: none;
 }
 
-.event_navn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.events_navn {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--lyssand);
     text-align: center;
-    padding: 20px;
+    padding: 1em 0.7em 1.2em;
+    height: 8.5em;
 }
 
-.event_navn h2 { 
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 1em;
+.events_navn h2 {
+    font-size: 1.1em;
 }
 
-.event_info {
-    position: absolute;
-    bottom: 0;
+.events_linje {
+    width: 80%;
+    height: 2px;
+    background-color: var(--lyssand);
+    border-radius: 10px;
+    margin: 0.8em 0 0.9em;
+}
+
+.events_info {
     width: 100%;
-    background-color: var(--roed);
-    color: var(--lyssand);
     display: flex;
-    justify-content: space-between;
-    padding: 5%;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.event_info, .dato, .pris {
+.events_cirkel {
+    width: 0.4em;
+    height: 0.4em;
+    background-color: var(--lyssand);
+    border-radius: 30px;
+}
+
+.events_dato, .events_kategori, .events_pris {
     font-size: 0.9em;
 }
 
-.event_info, .dato {
-    font-weight:600;
-    text-transform: uppercase;
+.events_dato, .events_kategori {
+    font-weight: 500;
 }
 
-/*-- STYLING AF ON SCROLL EFFEKT -- */
-
-.event_boks_mobil3{
-    transition: all 1.5s;
-    opacity: 0;
+/* --------------------------------- 
+--- EVENTUNDERSIDER (FÆLLESSANG) ---
+--------------------------------- */
+.events_banner{
+    width: 100%;
 }
 
-.event_boks_mobil4{
-    transition: all 1.5s;
-    opacity: 0;
-}
-
-
-/* ---------------------
-------- FEJLSIDE -------
----------------------- */
-#h1_fejl{
-    margin-top: 2em;
-    text-align: center;
-}
-
-.h4_fejl {
-text-align: center;
-margin-top: 1.5em;
-color: black;
-}
-
-.knap-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 3em;
-    text-decoration: none;
-    color: var(--lyssand);
-}
-
-.knap-container a {
-    text-decoration: none;
-    color: var(--lyssand);
-}
-
-.fejl_element_knap{
-    padding: 0.6em 1.7em;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--roed);
-    font-family: 'Jost';
-    text-transform: uppercase;
-    font-weight: 400;
-    color: var(--lyssand);
-    box-shadow: 3px 3px 6px #000000a3;
-    transition: ease-in-out .5s;
-    cursor: pointer;
-    margin: 2em auto 2em;
-    display: block;
-}
-
-.tegning-container {
+.sang_dato {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4em;
+    gap: 1em;
+    font-size: 0.85em;
+    text-align: center;
 }
 
-#kaffebonner {
+.events_tekst{
+    margin: 4% auto;
+    max-width: 50em;
+    line-height: 180%;
+}
+
+#events_tilmeld_display{
+    max-width: 30%;
+    margin: 15% 20% 0 auto;
+}
+
+#events_maps_display{
+    max-width: 40%;
+    margin-left: auto;
+    margin-top: 8%;
+    margin-right: 9%;
+}
+
+.events_maps_container{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3%;
+    overflow: hidden;
+}
+
+/* FORMS - TILMELDING */
+.forms_container{
+    width: 100%;
+    max-width: 40em;
+    margin: 5% auto 5%;
+ }
+ 
+ form {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ input, textarea {
+    background-color: var(--lyssand);
+    margin-bottom: 5%;
+    padding: 3%;
+    border: 2px solid rgba(2, 24, 43, 0.5);
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: "Jost", sans-serif;
+    box-shadow: 5px 5px 5px rgba(2, 24, 43, 0.3);
+ }
+ 
+ textarea {
+    height: 10em;
+ }
+ 
+ #events_send_knap {
+    padding: 3%;
+    align-self: flex-end;
+    background-color: var(--roed);
+    width: 30%;
+    color: var(--lyssand);
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 5%;
+ }
+ 
+ #events_send_knap:hover {
+    background-color: var(--morkblaa);
+ }
+ 
+ .fejl {
+    color: var(--roed);
     display: none;
+ }
+ 
+ #navn{
+    background-color: var(--lyssand);
+ }
+ 
+ #mail{
+    background-color: var(--lyssand);
+ }
+ 
+ #besked{
+    background-color: var(--lyssand);
+ }
+ 
+ #antal{
+    color: grey;
+    background-color: var(--lyssand);
+    font-size: 1em;
+    font-family: "Jost", sans-serif;
+    padding: 4%;
+    border: 2px solid rgba(2, 24, 43, 0.5);
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(2, 24, 43, 0.3);
+    margin-bottom: 5%;
+ }
+ 
+ /* Modal */
+ #events_send_modal{
+    display: none; /* sættes til display: block i JS */
+    position: fixed;
+    z-index: 10;
+    top: 18%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: var(--lyssand);
+    width: 80%;
+    max-width: 80%;
+    border-radius: 15px;
+    border: 3px solid var(--morkblaa);
+    overflow: hidden;
+ }
+ 
+ .events_send_modal_container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-height: 50%;
+    overflow: hidden;
+ }
+ 
+ #events_send_modal_overskrift{
+    text-align: center;
+    margin-top: 5%;
+ }
+ 
+ #events_send_modal_img{
+    max-width: 60%;
+    margin-top: 12%;
+ }
+ 
+ .events_send_modal_tekst{
+    text-align: center;
+    margin: 5%;
+ }
+ 
+ #events_send_obs_tekst{
+    font-family: "Jost", sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 8%;
+ }
+
+/* ----------------------
+------ FÆLLESSANG -------
+---------------------- */
+ #sang_h1{
+    margin: 5%;
 }
 
-#lanestol {
-    width: 15em;
-    margin-top: 4em;
+/* ----------------------
+----- FÆLLESSPISNING ----
+---------------------- */
+
+ /*PLACERING AF PUNKT TEKST*/
+ #spisning_punkt_tekst{
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .spisning_punkter {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+ }
+ 
+ /*STYLING AF PRIKKEN*/
+ .spisning_prik {
+    background-color: var(--roed);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2%;
+    padding: 5px;
+ }
+ 
+ /* styling af menu til mobil */
+ #menu_mobil_container{
+    display: flex;
+    justify-content: center;
+ }
+ 
+ #spisning_mobil_menu{
+    max-width: 95%;
+    margin-top: 4%;
+ }
+ 
+ /* styling af menu til desktop */
+ #menu_desktop_container{
+    display: none;
+ }
+ 
+
+/* ----------------------
+-------- FOREDRAG -------
+---------------------- */
+#event_overskrift {
+    margin: 5%;
+}
+
+.foredrag_illustration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 6em 1em;
+    max-width: 50%;
+}
+
+/* ----------------------
+----------- QUIZ---------
+---------------------- */
+.quiz_wrapper{
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+.quiz_dot {
+    height: 8px;
+    width: 8px;
+    vertical-align: middle;
+    background-color: var(--roed);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.quiz_wrapper h4 {
+    padding-left: 10%;
+    font-weight: 500;
+}
+
+.foredrag_illustration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 6em 1em;
+    max-width: 50%;
 }
 
 
@@ -883,6 +1116,406 @@ color: black;
     overflow: hidden;
 }
 
+/* ----------------------
+---- BAG OM FIKUMDIK ----
+---------------------- */
+
+/* DESKTOP VERSIONEN AF INFOGRAFIK VISES IKKE */
+
+#infografik_wrapper {
+    display: none;
+}
+
+
+.bagomfikumdik_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bagomfikumdik_displayfont {
+    display: none;
+}
+
+.bagom_broedtekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.bagom_broedtekst h2, .bagom_broedtekst p {
+    margin: 0.5em 0;
+    font-weight: 400;
+}
+
+.presse_billede {
+    margin: 3em;
+}
+
+#migogaarhus_desktop {
+    display: none;
+}
+
+.bagom_galleri_container {
+    margin: 4em 0 4em 0;
+}
+
+.bagom_galleri {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.bagom_galleri img{
+    width: 100%;
+    padding:5px;
+}
+
+/* ----------------------
+---- FIKUMDIK FAVNER ----
+---------------------- */
+
+.favner_intro {
+    margin: 1.2em auto 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 50em;
+}
+
+.favner_intro_tekst h1 {
+    padding-bottom: 0.8em;
+} 
+
+.favner_intro_tekst h4 {
+    text-align: center;
+}
+
+.favner_intro_img {
+    width: 50%;
+    max-width: 18em;
+    margin: 0 auto;
+}
+
+/* Kontorfællesskab */
+#favner_kontor {
+    margin: 1.2em auto 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 50em;
+}
+
+/* Tekst styling - kontor og haller */
+.favner_kontor_tekst h2, .favner_hal_tekst h2 {
+    margin-bottom: 0.5em;
+}
+
+.favner_kontor_tekst p a, .favner_hal_tekst p a {
+    color: var(--roed);
+    font-weight: 600;
+}
+
+.favner_kontor_billeder {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+/* Galleri - både kontor og hal */
+.favner_kontor_galleri, .favner_hal_galleri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    margin: 2em 0 1em;
+}
+
+.favner_kontor_galleri img, .favner_hal_galleri img {
+    width: 47%;
+    max-width: 15em;
+}
+
+.favner_kontor_info {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    margin-top: .5em;
+}
+
+.favner_kontor_illustration {
+    width: 20%;
+    max-width: 5em;
+    transform: rotate(10deg);
+}
+
+.favner_kontor_font {
+    width: 25%;
+    max-width: 6em;
+    padding: 2.5em 0;
+}
+
+/* Hallerne */
+.favner_img_container {
+    display: flex;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+.favner_img {
+    margin: 0 auto 1.5em;
+    width: 60%;
+    max-width: 20em;
+}
+
+#favner_hal {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 50em;
+    margin: 1em auto;
+    gap: 1em;
+}
+
+.favner_hal_container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+.favner_hal_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 35em;
+}
+
+.favner_hal_illustration1 {
+    display: flex;
+    justify-content: start;
+    gap: 5%;
+    width: 60%;
+    max-width: 12em;
+    margin-right: 30%;
+}
+
+.favner_hal_illustration1 .favner_img2, .favner_img1 {
+    width: 50%;
+    max-width: 8em;
+}
+
+.favner_hal_illustration2 {
+    display: flex;
+    justify-self: end;
+    justify-content: end;
+    gap: 5%;
+    width: 70%;
+    max-width: 16em;
+    margin-left: 30%;
+    margin-top: -2em;
+}
+
+.favner_hal_illustration2 .favner_img2 {
+    width: 35%;
+    max-width: 7em;
+}
+
+.favner_hal_illustration2 .favner_img1 {
+    width: 50%;
+    max-width: 11em;
+}
+
+
+/* ----------------------
+-------- KONTAKT --------
+---------------------- */
+#kontakt_sidetitel {
+    margin-top: 1em;
+}
+
+#kontakt_top_container{
+    display: flex;
+    flex-direction: column;
+    margin: .6em 0;
+}
+
+.kontakt_top_element{
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7em;
+}
+
+#kontakt_info{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+/* FAQ styling */
+.kontakt_faq_container {
+    background-color: var(--morksand);
+    padding: 1.5em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 32em;
+}
+
+.kontakt_faq_container h2 {
+    text-align: center;
+}
+
+#kontakt_faq_display{
+    display: none; /* vises først på desktop */
+}
+
+.kontakt_faq {
+    width: 100%;
+}
+
+.kontakt_faq_element {
+    margin-top: 1em;
+}
+
+.kontakt_faq_element.aktiv .kontakt_faq_svar {
+    display: block;
+}
+
+.kontakt_faq_sporgsmaal {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.kontakt_faq_sporgsmaal h3 {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.kontakt_faq_svar {
+    display: none;
+}
+
+.kontakt_faq_svar p {
+    font-size: 0.9em;
+    border-bottom: solid 1.5px var(--morkblaa);
+    padding: 1em 0 1em 4em;
+}
+
+.kontakt_faq_svar a {
+    font-weight: 500;
+    color: var(--roed);
+}
+
+/* Pile-knap til FAQ */
+.kontakt_knap {
+    border: none;
+    background-color: var(--roed);
+    color: var(--lyssand);
+    border-radius: 100%;
+    width: 2.2em;
+    height: 2.2em;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.kontakt_faq_element.aktiv .faq_knap {
+   transform: rotate(90deg);
+}
+
+/* display font ved kontaktforms*/
+#kontakt_forms_display{
+    width: 60%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    transform: rotate(20deg);
+}
+
+/* Kontakt - Billede container */
+#kontakt_img_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+}
+
+.kontakt_img_element{
+    margin: 2%;
+    max-width: 75%;
+    align-self: center;
+}
+
+
+/* ---------------------
+------- FEJLSIDE -------
+---------------------- */
+#h1_fejl{
+    margin-top: 2em;
+    text-align: center;
+}
+
+.h4_fejl {
+text-align: center;
+margin-top: 1.5em;
+color: black;
+}
+
+.knap-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3em;
+    text-decoration: none;
+    color: var(--lyssand);
+}
+
+.knap-container a {
+    text-decoration: none;
+    color: var(--lyssand);
+}
+
+.fejl_element_knap{
+    padding: 0.6em 1.7em;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--roed);
+    font-family: 'Jost';
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--lyssand);
+    box-shadow: 3px 3px 6px #000000a3;
+    transition: ease-in-out .5s;
+    cursor: pointer;
+    margin: 2em auto 2em;
+    display: block;
+}
+
+.tegning-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+#kaffebonner {
+    display: none;
+}
+
+#lanestol {
+    width: 15em;
+    margin-top: 4em;
+}
 
 /* -------------------- 
 ------- FOOTER -------
@@ -1263,44 +1896,448 @@ footer h4 {
     /* -------------------- 
     ------- EVENTS -------
     -------------------- */
-    .event_container {
-        grid-template-columns: 30% 30% 30%;
-        justify-content: center;
-        gap: 2.5em;
-        row-gap: 2em;
-        padding: 20px;
-        margin: auto; /*DETTE CENTRERER MIN CONTAINER*/
-        margin-bottom: 4em;
-        max-width: 1000px; /*SÆTTER EN PASSENDE BREDDE FOR MIN CONTAINER*/
-    }
-
-    .events_h1 { /* EVENTS titel */
-        color: var(--roed);
-        margin-top: 1.5em;
-        font-size: 3em;
-        text-align: center;
-    }
-
-    .event_boks:hover {
+    .events_boks:hover {
         transform: scale(1.05); /* DETTE FORSTØRRE EVENT KORT VED HOVER */
-        box-shadow: 0 4px 8px var(--morkblaa); /* GØR SKYGGEN MØRKERE OG STØRRE */
-        transition: 0.5s ease-in-out; /*SÆTTER EN SMOOTH TRANSITION DER VARER 0.5 s */
+        box-shadow: 0 4px 8px gray;
+        transition: 0.5s ease-in-out;
     }
 
-    .event_navn {
-        position: absolute;
-        top: 0;
+    .events_intro {
+        margin: 4em auto 1em;
+        padding: 0 0.5em;
+    }
+    
+    .events_h1 { /* EVENTS titel */
+        margin-bottom: 0.5em;
+    }
+    
+    .events_filtrering {
+        margin: 3.5em auto;
+    }
+    
+    .events_h4 {
+        margin-bottom: 0.7em;
+    }
+    
+    .events_filter_knap {
+        font-size: 1em;
+        padding: 0.2em 0.5em;
+        border-radius: 12px;
+    }
+    
+    .events_container {
+        margin: 0 auto 2em;
+        padding: 0 2em;
+    }
+    
+    .events_boks {
+        border-radius: 10px;
+    }
+    
+    .events_navn {
+        padding: 1em 0.7em 1.2em;
+        height: 9.5em;
+    }
+    
+    .events_navn h2 {
+        font-size: 1.4em;
+    }
+    
+    .events_linje {
+        width: 80%;
+        height: 2px;
+        background-color: var(--lyssand);
+        border-radius: 10px;
+        margin: 0.8em 0;
+    }
+    
+    .events_info {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .events_cirkel {
+        width: 0.4em;
+        height: 0.4em;
+        background-color: var(--lyssand);
+        border-radius: 30px;
+    }
+    
+    .events_dato, .events_kategori, .events_pris {
+        font-size: 1em;
+    }
+
+    /* --------------------------------- 
+    --- EVENTUNDERSIDER (FÆLLESSANG) ---
+    --------------------------------- */
+    #sang_h1{
+        margin: 2%;
+    }
+
+    .sang_dato h3 {
+        font-size: 2em;
+    }
+
+    .sang_dato {
+        margin-bottom: 2em;
+    }
+
+    #events_tilmeld_display{
+        max-width: 15%;
+        margin-right: 30%;
+        margin-top: 5%;
+    }
+
+    .forms_container{
+        width: 40%;
+        margin: 5% auto 3%;
+    }
+
+    #events_maps_display{
+        max-width: 23%;
+    }
+
+    
+    /* TILMELDING SEND MODAL */
+    #events_send_modal{
+        display: none; /* sættes til display: block i JS */
+        position: fixed;
+        z-index: 10;
+        top: 18%;
         left: 0;
         right: 0;
-        bottom: 0;
+        margin: 0 auto;
+        background-color: var(--lyssand);
+        width: 30%;
+        max-width: 40%;
+        border-radius: 15px;
+        border: 3px solid var(--morkblaa);
+        overflow: hidden;
+    }
+
+    /* ---------------------- 
+    ----- FÆLLESSPISNING ----
+    ---------------------- */
+     /* styling af menu til mobil --> skjuler mobil menu */
+    #menu_mobil_container{
+        display: none;
+    }
+    
+    /* styling af menu til desktop --> viser desktop menu */
+    #menu_desktop_container{
         display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+    
+    #spisning_desktop_menu{
+        max-width: 60%;
+    }
+
+    /* ----------------------
+    -------- FOREDRAG -------
+    ---------------------- */
+    #event_overskrift{
+        margin: 2%;
+    }
+
+    .foredrag_illustration {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #event_viser {
+        display: flex;
+        justify-content:flex-end;
+        width: 50%;
+        max-width: 22em;
+    }
+
+    /* ----------------------
+    ----------- QUIZ---------
+    ---------------------- */
+    #event_overskrift{
+        margin: 2%;
+    }
+
+    .quiz_wrapper{
+        margin-top: 2%;
+        align-items: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    #eventviser{
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        width: 50%;
+    }
+
+    /* ----------------------
+    ---- BAG OM FIKUMDIK ----
+    ---------------------- */
+    #infografikmobile_wrapper {
+        display: none;
+    }
+
+    #infografik_wrapper {
+        display: flex;
+    }
+
+    #infografik_desk {
+        width: 100%;
+    }
+    
+    .bagomfikumdik_wrapper {
+        display: grid;
+        grid-template-columns: 20% 40% 20%;
+        margin: 5em 0 5em 0;
+        z-index: 3;
+    }
+    
+    #bagomfikumdik_displayfont {
+        display: block;
+        width: 450px;
+    }
+
+    #presse_titel{
+        padding-top: 3em;
+    }
+    
+    .bagomfikumdik_wrapper h2 {
+        margin-top: 5em;
+    }
+
+    .bagom_desktop {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 0 4em 0 4em;
+    }
+
+    .presse_billede:hover{
+        background-color: #b61624;
+        transition-duration: 1s;
+        border-radius: 10px;
+    }
+
+    .bagom_broedtekst{
+        margin: 5em;
+    }
+
+    #migogaarhus_mobile {
+        display: none;
+    }
+
+    #migogaarhus_desktop {
+        display: block;
+    }
+
+    .bagom_galleri {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .bagom_galleri img{
+        width: 100%;
+        padding:5px;
+        transition-duration: 0.5s;
+    }
+
+    .bagom_galleri img:hover{
+        transform: scale(1.1);
+    }
+
+    /* ----------------------
+    ---- FIKUMDIK FAVNER ----
+    ---------------------- */
+    .favner_intro {
+        margin: 3em auto 6em;
+        flex-direction: row;
+        gap: 3rem;
+        max-width: 60em;
+    }
+    
+    .favner_intro_tekst h1 {
+        padding-bottom: 0.6em;
+    } 
+    
+    .favner_intro_img {
+        width: 42em;
+    }
+    
+    /* Kontorfællesskab */
+    #favner_kontor {
+        flex-direction: row;
+        max-width: 70em;
+        margin-bottom: 5.5em;
+    }
+    
+    .favner_kontor_tekst {
+        width: 40%; 
+        padding-right: 1em;
+    }
+
+    /* Tekst styling - kontor og haller */
+    .favner_kontor_tekst h2, .favner_hal_tekst h2 {
+        margin-bottom: 0.5em;
+    }
+    
+    .favner_kontor_billeder {
         flex-direction: column;
+        width: 60%;
+    }
+    
+    /* Galleri - både kontor og hal */
+    .favner_kontor_galleri, .favner_hal_galleri {
+        margin: 3.3em 0 1em;
+    }
+    
+    .favner_kontor_galleri img, .favner_hal_galleri img {
+        width: 11em;
+    }
+    
+    .favner_kontor_info {
+        justify-content: start;
+        margin-top: .7em;
+    }
+    
+    .favner_kontor_illustration {
+        margin-left: 3em;
+    }
+    
+    /* Hallerne */
+    .favner_img_container {
+        max-width: 60em;
+    }
+
+    .favner_img {
+        margin-bottom: -6em;
+        margin-right: 32em;
+    }
+    
+    #favner_hal {
+        flex-direction: row;
+        max-width: 70em;
+        margin: 0 auto 5em;
+        align-items: center;
+    }
+    
+    .favner_hal_container1 {
+        width: 60%;
+    }
+
+    .favner_hal_container2 {
+        flex-direction: column;
+        width: 40%;
+        padding-left: 1em;
+    }
+    
+    .favner_hal_info {
+        width: 100%;
+    }
+    
+    .favner_hal_illustration1 {
+        margin-right: 45%; 
+    }
+    
+    .favner_hal_illustration2 {
+        margin-left: 29%;
+    }
+
+    /* ----------------------
+    -------- KONTAKT --------
+    ---------------------- */
+    #kontakt_sidetitel{
+        margin-top: 2%;
+    }
+
+    #kontakt_top_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15%;
+        align-items: center;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+     /* FAQ sektion */
+     .kontakt_sektion1 {
+        margin: 5em 0;
+        display: flex;
         justify-content: center;
         align-items: center;
-        color: var(--lyssand);
-        text-align: center;
-        padding: 20px;
-        font-size: 1.5em; /*SÆTTER NAVN, DATO, PRIS I DEN KORREKTE STØRRELSE*/
+    }
+
+    .kontakt_faq_container1 {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 65em;
+        position: relative;
+    }
+
+    #kontakt_faq_display{
+        display: inline;
+        width: 35%;
+        margin-left: -140%;
+        margin-bottom: -8%;
+    }
+
+    .kontakt_faq_container {
+        background-color: var(--morksand);
+        padding: 1.5em;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .kontakt_faq_element {
+        margin-top: 1em;
+    }
+
+    .kontakt_faq_sporgsmaal h3 {
+        font-size: 1em;
+    } 
+
+    .kontakt_faq_svar p {
+        font-size: 1em;
+    }
+
+    /* Kontakt forms */
+    #kontakt_forms_display{
+        max-width: 18%;
+        margin-left: 20%;
+        margin-top: 2%;
+        margin-bottom: 0%;
+        transform: rotate(0deg);
+    }
+
+    .kontakt_forms_container{
+        max-width: 40%;
+        margin: 0 auto;
+    }
+
+    /* Kontakt - Billede container */
+    #kontakt_img_container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        margin-top: 3%;
+        margin-bottom: 4%;
+    }
+
+    .kontakt_img_element{
+        max-width: 35%;
+        margin: 0;
     }
 
     /* ---------------------

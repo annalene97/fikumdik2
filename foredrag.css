@@ -1,26 +1,9 @@
-#foredrag_banner img{
-    width: 100%;
-    height: 70%;
+.foredrag_wrapper {
+    padding-top: 1rem;
 }
 
 #event_overskrift {
-    padding-top: 0.5rem;
-}
-
-.sang_dato {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    font-size: small;
-    padding-top: 0.5rem;
-}
-
-.foredrag_wrapper p{
-    padding-top: 2.5rem;
-    font-weight: 400;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 5%;
 }
 
 .forms_tilmeld {
