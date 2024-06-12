@@ -103,6 +103,12 @@
         grid-template-columns: 50% 50%;
     }
 
+    .presse_billede:hover{
+        background-color: #b61624;
+        transition-duration: 1s;
+        border-radius: 10px;
+    }
+
     .bagom_broedtekst{
         margin: 5em;
     }
