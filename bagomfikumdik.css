@@ -103,6 +103,10 @@
         grid-template-columns: 50% 50%;
     }
 
+    .bagom_broedtekst{
+        margin: 5em;
+    }
+
     #migogaarhus_mobile {
         display: none;
     }
