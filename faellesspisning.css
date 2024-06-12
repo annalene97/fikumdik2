@@ -70,7 +70,7 @@ textarea {
    height: 10em;
 }
 
-button {
+#events_send_knap {
    padding: 3%;
    align-self: flex-end;
    background-color: var(--roed);
@@ -83,7 +83,7 @@ button {
    margin-bottom: 5%;
 }
 
-button:hover {
+#events_send_knap:hover {
    background-color: var(--morkblaa);
 }
 

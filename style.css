@@ -380,8 +380,7 @@ main {
     background-color: var(--roed);
     color: var(--lyssand);
     border-radius: 100%;
-    width: 2.2em;
-    height: 2.2em;
+    padding: 0.2em .6em;
     transition: transform 0.5s ease;
     cursor: pointer;
 }
