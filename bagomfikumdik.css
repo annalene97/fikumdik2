@@ -2,21 +2,11 @@
 ---- BAG OM FIKUMDIK ----
 ---------------------- */
 
-/*--FARVER---*/
-:root {
-    --morkblaa: rgba(2, 24, 43, 1);
-    --roed: rgba(182, 22, 36, 1);
-    --cyanblaa: rgba(60, 133, 144, 1);
-    --morksand: rgba(243, 231, 196, 1);
-    --lyssand: rgba(255, 254, 245, 1);
-}
-
 /* DESKTOP VERSIONEN AF INFOGRAFIK VISES IKKE */
 
 #infografik_wrapper {
     display: none;
 }
-
 
 
 .bagomfikumdik_wrapper {
