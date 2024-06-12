@@ -49,7 +49,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: center;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 .bagom_galleri img{
@@ -75,13 +75,17 @@
     .bagomfikumdik_wrapper {
         display: grid;
         grid-template-columns: 20% 40% 20%;
+        margin: 5em 0 5em 0;
+        z-index: 3;
     }
     
     #bagomfikumdik_displayfont {
-        display: flex;
-        width: 100%;
-        justify-content: flex-start;
-        padding-left: 10em;
+        display: block;
+        width: 450px;
+    }
+
+    #presse_titel{
+        padding-top: 3em;
     }
     
     .bagomfikumdik_wrapper h2 {
@@ -91,6 +95,7 @@
     .bagom_desktop {
         display: grid;
         grid-template-columns: 50% 50%;
+        margin: 0 4em 0 4em;
     }
 
     .presse_billede:hover{
