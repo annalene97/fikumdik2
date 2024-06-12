@@ -2,6 +2,15 @@
 ---- BAG OM FIKUMDIK ----
 ---------------------- */
 
+/*--FARVER---*/
+:root {
+    --morkblaa: rgba(2, 24, 43, 1);
+    --roed: rgba(182, 22, 36, 1);
+    --cyanblaa: rgba(60, 133, 144, 1);
+    --morksand: rgba(243, 231, 196, 1);
+    --lyssand: rgba(255, 254, 245, 1);
+}
+
 /* DESKTOP VERSIONEN AF INFOGRAFIK VISES IKKE */
 
 #infografik_wrapper {
@@ -29,12 +38,17 @@
     margin: 1em 0;
 }
 
-.bagom_broedtekst h4, .bagom_broedtekst p {
+.bagom_broedtekst h2, .bagom_broedtekst p {
     margin: 0.5em 0;
+    font-weight: 400;
 }
 
 .presse_billede {
     margin: 3em;
+}
+
+#migogaarhus_desktop {
+    display: none;
 }
 
 .bagom_galleri_container {
@@ -82,6 +96,19 @@
     
     .bagomfikumdik_wrapper h2 {
         margin-top: 5em;
+    }
+
+    .bagom_desktop {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #migogaarhus_mobile {
+        display: none;
+    }
+
+    #migogaarhus_desktop {
+        display: block;
     }
 
     .bagom_galleri {
