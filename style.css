@@ -2262,13 +2262,13 @@ footer h4 {
         justify-content: center;
         gap: 15%;
         align-items: center;
-        margin-left: 8%;
-        margin-right: 8%;
+        margin: 0 auto;
+        max-width: 75em;
     }
 
      /* FAQ sektion */
      .kontakt_sektion1 {
-        margin: 5em 0;
+        margin: 2.5em 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2280,12 +2280,12 @@ footer h4 {
         width: 90%;
         max-width: 65em;
         position: relative;
-    }
+    } /* HVAD ER DET I STYLER HER? DER FINDES INGEN CLASS MED DETTE NAVN */
 
     #kontakt_faq_display{
         display: inline;
         width: 35%;
-        margin-left: -140%;
+        margin-left: -28%;
         margin-bottom: -8%;
     }
 
