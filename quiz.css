@@ -114,6 +114,7 @@ button:hover {
 
 /* MEDIA QUIERIE */ 
 @media screen and (min-width: 1024px) {
+
     #event_overskrift{
         margin: 2%;
     }
