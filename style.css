@@ -2065,8 +2065,7 @@ footer h4 {
     .quiz_wrapper{
         margin-top: 2%;
         align-items: center;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin: 2% auto;
     }
 
     #eventviser{
@@ -2352,7 +2351,6 @@ footer h4 {
     ------------------------------------- */
     .kunstner_spotify_container {
         margin: 5em 15em;
-        
     }
     
     .kunstner_wrapper {
