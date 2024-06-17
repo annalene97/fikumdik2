@@ -1228,16 +1228,23 @@ main {
 
 /* Galleri - både kontor og hal */
 .favner_kontor_galleri, .favner_hal_galleri {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    margin: 2em 0 1em; */
+    display: grid;
+    grid-template-columns: 50% 50%;
     gap: 1em;
     justify-content: center;
     margin: 2em 0 1em;
 }
 
+
 .favner_kontor_galleri img, .favner_hal_galleri img {
-    width: 47%;
-    max-width: 15em;
+   /*  width: 47%;
+    max-width: 15em; */
+    width: 100%;
 }
 
 .favner_kontor_info {
@@ -2194,10 +2201,11 @@ footer h4 {
     /* Galleri - både kontor og hal */
     .favner_kontor_galleri, .favner_hal_galleri {
         margin: 3.3em 0 1em;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    
+
     .favner_kontor_galleri img, .favner_hal_galleri img {
-        width: 11em;
+        /* width: 11em; */
     }
     
     .favner_kontor_info {
@@ -2215,7 +2223,7 @@ footer h4 {
     }
 
     .favner_img {
-        margin-bottom: -6em;
+        margin-bottom: -3.5em;
         margin-right: 32em;
     }
     
