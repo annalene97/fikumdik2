@@ -31,10 +31,10 @@ document.getElementById('form').addEventListener('submit', function(event) {
         isValid = false;
     }
 
-    if (besked.value.trim() === '') {
+   /*  if (besked.value.trim() === '') {
         document.getElementById('besked_fejl').style.display = 'inline';
         isValid = false;
-    }
+    } */
 
     // Hvis alle felter er udfyldt vises MODAL
     if (isValid) {
