@@ -11,7 +11,6 @@ document.getElementById('form').addEventListener('submit', function(event) {
     const antal = document.getElementById('antal');
     const navn = document.getElementById('navn');
     const mail = document.getElementById('mail');
-    const besked = document.getElementById('besked');
 
        // Tjekker om input felterne er tomme, eller kun indeholder mellemrum (det er det trim betyder)
     // Hvis feltet er tomt vises den tilhørende fejlmeddelelse ved at ændre display til "inline"
@@ -32,11 +31,6 @@ document.getElementById('form').addEventListener('submit', function(event) {
         document.getElementById('mail_fejl').style.display = 'inline';
         isValid = false;
     }
-
-   /*  if (besked.value.trim() === '') {
-        document.getElementById('besked_fejl').style.display = 'inline';
-        isValid = false;
-    } */
 
     // Hvis alle felter er udfyldt vises MODAL
     if (isValid) {
