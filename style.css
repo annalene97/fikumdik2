@@ -1,19 +1,29 @@
 /* CSS RESET */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-img, video, svg {
+}
+
+img,
+video,
+svg {
     display: block;
     max-width: 100%;
-  }
-  
-p, h1, h2, h3, h4, h5, h6 {
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     overflow-wrap: break-word;
-  }
+}
 
 /* -------------------- 
 ------ STYLE KIT ------
@@ -38,25 +48,29 @@ body {
     width: 100vw;
 }
 
-h1 { /* Bruges til over-overskrift */
+h1 {
+    /* Bruges til over-overskrift */
     font-size: 1.5em;
     font-weight: 700;
     text-align: center;
     color: var(--roed);
 }
 
-h2 { /* Bruges til underoverskrift */
+h2 {
+    /* Bruges til underoverskrift */
     font-size: 1.3em;
     font-weight: 600;
 }
 
-button { /* knap */
+button {
+    /* knap */
     font-size: 1.1em;
     font-weight: 500;
     font-family: "Jost", sans-serif;
 }
 
-h4 { /* introducerende brødtekst */
+h4 {
+    /* introducerende brødtekst */
     font-size: 1em;
     line-height: 1.5em;
     font-weight: 400;
@@ -124,7 +138,8 @@ ul {
     transition: all 0.3s ease-in-out;
 }
 
-#menu.aktiv { /* Til js */
+#menu.aktiv {
+    /* Til js */
     display: block;
 }
 
@@ -207,18 +222,18 @@ main {
 
 
 /* Billede-karrusel */
-.forside_sektion2 { 
+.forside_sektion2 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.forside_karrusel_wrapper { 
-    max-width: 64em; 
+.forside_karrusel_wrapper {
+    max-width: 64em;
     width: 90%;
-} 
+}
 
-.forside_karrusel  {
+.forside_karrusel {
     position: relative;
 }
 
@@ -261,11 +276,12 @@ main {
 }
 
 /* Karrusel kort */
- .forside_element {
+.forside_element {
     position: relative;
     width: 17em;
     height: 17em;
-    flex-shrink: 0;/* ?? */ 
+    flex-shrink: 0;
+    /* ?? */
 }
 
 .forside_element img {
@@ -286,7 +302,7 @@ main {
 }
 
 /* Knap på karrusel kortene */
-.forside_element_knap { 
+.forside_element_knap {
     padding: 0.6em 1.7em;
     border: none;
     border-radius: 5px;
@@ -391,14 +407,14 @@ main {
 }
 
 .forside_faq_element.aktiv .faq_knap {
-   transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 
 /* --------------------------
 ------- MAD OG DRIKKE -------
 --------------------------- */
-.mad_flexbox_sektion{
+.mad_flexbox_sektion {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -407,12 +423,12 @@ main {
     padding-bottom: 8%;
 }
 
-#mad_overskrift{
+#mad_overskrift {
     padding-top: 10%;
     padding-bottom: 5%;
 }
 
-#mad_introtekst{
+#mad_introtekst {
     text-align: center;
 }
 
@@ -486,7 +502,8 @@ main {
     font-size: 1.5em;
 }
 
-#mad_kaffeimg_knap, #mad_bagimg_knap {
+#mad_kaffeimg_knap,
+#mad_bagimg_knap {
     padding: 0.5em 1.5em;
     border: none;
     border-radius: 5px;
@@ -498,7 +515,8 @@ main {
     margin-bottom: 10%;
 }
 
-#mad_kaffeimg_knap:hover, #mad_bagimg_knap:hover {
+#mad_kaffeimg_knap:hover,
+#mad_bagimg_knap:hover {
     font-size: 1.3em;
 }
 
@@ -506,8 +524,9 @@ main {
 /* ---------------------
       KAFFE MODAL
 ----------------------*/
-#mad_kaffe_modal{
-    display: none; /* sættes til display: block i JS */
+#mad_kaffe_modal {
+    display: none;
+    /* sættes til display: block i JS */
     position: fixed;
     z-index: 10;
     top: 5em;
@@ -526,16 +545,18 @@ main {
 /* Her har vi anvendt ChatGPT til at få lukknappen (x) til at overlay billedet i modalerne (se bilag i rapporten) */
 #lukknap_kaffe_modal {
     color: var(--morkblaa);
-    font-size: 300%; /* størrelsen på lukknap (x) */
+    font-size: 300%;
+    /* størrelsen på lukknap (x) */
     font-weight: bold;
     position: absolute;
     right: 0.5em;
     top: 0;
 }
-  
-  #lukknap_kaffe_modal:hover,
-  #lukknap_kaffe_modal:focus {
-    color: var(--roed); /* farven på lukknap (x) når man hover */
+
+#lukknap_kaffe_modal:hover,
+#lukknap_kaffe_modal:focus {
+    color: var(--roed);
+    /* farven på lukknap (x) når man hover */
     text-decoration: none;
     cursor: pointer;
 }
@@ -546,7 +567,7 @@ main {
     overflow: hidden;
 }
 
-.mad_kaffe_modal_overskrift{
+.mad_kaffe_modal_overskrift {
     color: var(--lyssand);
     text-align: center;
     padding: 1em 1.5em;
@@ -557,16 +578,19 @@ main {
     position: absolute;
     bottom: 0;
 }
-#mad_kaffe_modal_img{
+
+#mad_kaffe_modal_img {
     /* border-top-left-radius: 15px;
     border-top-right-radius: 15px; */
     opacity: 0.6;
     overflow: hidden;
 }
-.mad_kaffe_modal_tekst{
+
+.mad_kaffe_modal_tekst {
     padding: 1.5em 1.5em 1em;
 }
-.mad_kaffe_modal_illustration{
+
+.mad_kaffe_modal_illustration {
     min-width: 4em;
     max-width: 15%;
     float: right;
@@ -577,8 +601,9 @@ main {
 /* ---------------------
     BAGVAERK MODAL
 ----------------------*/
-#mad_bagvaerk_modal{
-    display: none; /* sættes til display: block i JS */
+#mad_bagvaerk_modal {
+    display: none;
+    /* sættes til display: block i JS */
     position: fixed;
     z-index: 10;
     top: 5em;
@@ -597,19 +622,21 @@ main {
 /* Her har vi anvendt ChatGPT til at få lukknappen (x) til at overlay billedet i modalerne (se bilag i rapporten) */
 #lukknap_bagvaerk_modal {
     color: var(--morkblaa);
-    font-size: 300%; /* størrelsen på lukknap (x) */
+    font-size: 300%;
+    /* størrelsen på lukknap (x) */
     font-weight: bold;
     position: absolute;
     right: 0.5em;
     top: 0;
-  }
-  
-  #lukknap_bagvaerk_modal:hover,
-  #lukknap_bagvaerk_modal:focus {
-    color: var(--roed); /* farven på lukknap (x) når man hover */
+}
+
+#lukknap_bagvaerk_modal:hover,
+#lukknap_bagvaerk_modal:focus {
+    color: var(--roed);
+    /* farven på lukknap (x) når man hover */
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 .mad_bagvaerk_modal_container {
     position: relative;
@@ -617,7 +644,7 @@ main {
     overflow: hidden;
 }
 
-.mad_bagvaerk_modal_overskrift{
+.mad_bagvaerk_modal_overskrift {
     color: var(--lyssand);
     text-align: center;
     padding: 1em 1.5em;
@@ -628,14 +655,17 @@ main {
     position: absolute;
     bottom: 0;
 }
-#mad_bagvaerk_modal_img{
+
+#mad_bagvaerk_modal_img {
     opacity: 0.8;
     overflow: hidden;
 }
-.mad_bagvaerk_modal_tekst{
+
+.mad_bagvaerk_modal_tekst {
     padding: 1.5em 1.5em 1em;
 }
-.mad_bagvaerk_modal_illustration{
+
+.mad_bagvaerk_modal_illustration {
     min-width: 5em;
     max-width: 20%;
     float: right;
@@ -644,7 +674,7 @@ main {
 }
 
 /* Menukort styling */
-#menukort{
+#menukort {
     filter: drop-shadow(5px 5px 5px var(--morkblaa));
 }
 
@@ -659,7 +689,8 @@ main {
     padding: 0 0.5em;
 }
 
-.events_h1 { /* EVENTS titel */
+.events_h1 {
+    /* EVENTS titel */
     margin-bottom: 0.5em;
 }
 
@@ -691,7 +722,8 @@ main {
     background-color: var(--roed);
 }
 
-.events_filter_knap.aktiv { /* Til filtrering: den aktive knap */
+.events_filter_knap.aktiv {
+    /* Til filtrering: den aktive knap */
     color: var(--lyssand);
     background-color: var(--roed);
 }
@@ -715,7 +747,8 @@ main {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 1px 3px 6px grey;
-    transition: all 1.5s; /* Til JS */ 
+    transition: all 1.5s;
+    /* Til JS */
     opacity: 0;
 }
 
@@ -760,18 +793,21 @@ main {
     border-radius: 30px;
 }
 
-.events_dato, .events_kategori, .events_pris {
+.events_dato,
+.events_kategori,
+.events_pris {
     font-size: 0.9em;
 }
 
-.events_dato, .events_kategori {
+.events_dato,
+.events_kategori {
     font-weight: 500;
 }
 
 /* --------------------------------- 
 --- EVENTUNDERSIDER (FÆLLESSANG) ---
 --------------------------------- */
-.events_banner{
+.events_banner {
     width: 100%;
 }
 
@@ -784,25 +820,25 @@ main {
     text-align: center;
 }
 
-.events_tekst{
+.events_tekst {
     margin: 4% auto;
     max-width: 50em;
     line-height: 180%;
 }
 
-#events_tilmeld_display{
+#events_tilmeld_display {
     max-width: 30%;
     margin: 15% 20% 0 auto;
 }
 
-#events_maps_display{
+#events_maps_display {
     max-width: 40%;
     margin-left: auto;
     margin-top: 8%;
     margin-right: 9%;
 }
 
-.events_maps_container{
+.events_maps_container {
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -811,18 +847,19 @@ main {
 }
 
 /* FORMS - TILMELDING */
-.forms_container{
+.forms_container {
     width: 100%;
     max-width: 40em;
     margin: 5% auto 5%;
- }
- 
- form {
+}
+
+form {
     display: flex;
     flex-direction: column;
- }
- 
- input, textarea {
+}
+
+input,
+textarea {
     background-color: var(--lyssand);
     margin-bottom: 5%;
     padding: 3%;
@@ -831,13 +868,13 @@ main {
     font-size: 1em;
     font-family: "Jost", sans-serif;
     box-shadow: 5px 5px 5px rgba(2, 24, 43, 0.3);
- }
- 
- textarea {
+}
+
+textarea {
     height: 10em;
- }
- 
- #events_send_knap {
+}
+
+#events_send_knap {
     padding: 3%;
     align-self: flex-end;
     background-color: var(--roed);
@@ -848,30 +885,30 @@ main {
     font-size: 1em;
     cursor: pointer;
     margin-bottom: 5%;
- }
- 
- #events_send_knap:hover {
+}
+
+#events_send_knap:hover {
     background-color: var(--morkblaa);
- }
- 
- .fejl {
+}
+
+.fejl {
     color: var(--roed);
     display: none;
- }
- 
- #navn{
+}
+
+#navn {
     background-color: var(--lyssand);
- }
- 
- #mail{
+}
+
+#mail {
     background-color: var(--lyssand);
- }
- 
- #besked{
+}
+
+#besked {
     background-color: var(--lyssand);
- }
- 
- #antal{
+}
+
+#antal {
     color: grey;
     background-color: var(--lyssand);
     font-size: 1em;
@@ -881,11 +918,12 @@ main {
     border-radius: 8px;
     box-shadow: 5px 5px 5px rgba(2, 24, 43, 0.3);
     margin-bottom: 5%;
- }
- 
- /* Modal */
- #events_send_modal{
-    display: none; /* sættes til display: block i JS */
+}
+
+/* Modal */
+#events_send_modal {
+    display: none;
+    /* sættes til display: block i JS */
     position: fixed;
     z-index: 10;
     top: 18%;
@@ -898,42 +936,42 @@ main {
     border-radius: 15px;
     border: 3px solid var(--morkblaa);
     overflow: hidden;
- }
- 
- .events_send_modal_container {
+}
+
+.events_send_modal_container {
     display: flex;
     justify-content: center;
     position: relative;
     max-height: 50%;
     overflow: hidden;
- }
- 
- #events_send_modal_overskrift{
+}
+
+#events_send_modal_overskrift {
     text-align: center;
     margin-top: 5%;
- }
- 
- #events_send_modal_img{
+}
+
+#events_send_modal_img {
     max-width: 60%;
     margin-top: 12%;
- }
- 
- .events_send_modal_tekst{
+}
+
+.events_send_modal_tekst {
     text-align: center;
     margin: 5%;
- }
- 
- #events_send_obs_tekst{
+}
+
+#events_send_obs_tekst {
     font-family: "Jost", sans-serif;
     font-style: italic;
     text-align: center;
     margin-bottom: 8%;
- }
+}
 
 /* ----------------------
 ------ FÆLLESSANG -------
 ---------------------- */
- #sang_h1{
+#sang_h1 {
     margin: 5%;
 }
 
@@ -941,43 +979,43 @@ main {
 ----- FÆLLESSPISNING ----
 ---------------------- */
 
- /*PLACERING AF PUNKT TEKST*/
- #spisning_punkt_tekst{
+/*PLACERING AF PUNKT TEKST*/
+#spisning_punkt_tekst {
     display: flex;
     justify-content: center;
- }
- 
- .spisning_punkter {
+}
+
+.spisning_punkter {
     display: flex;
     gap: .5em;
     align-items: center;
- }
- 
- /*STYLING AF PRIKKEN*/
- .spisning_prik {
+}
+
+/*STYLING AF PRIKKEN*/
+.spisning_prik {
     background-color: var(--roed);
     border-radius: 50%;
     display: inline-block;
     margin: 2%;
     padding: 5px;
- }
- 
- /* styling af menu til mobil */
- #menu_mobil_container{
+}
+
+/* styling af menu til mobil */
+#menu_mobil_container {
     display: flex;
     justify-content: center;
- }
- 
- #spisning_mobil_menu{
+}
+
+#spisning_mobil_menu {
     max-width: 95%;
     margin-top: 4%;
- }
- 
- /* styling af menu til desktop */
- #menu_desktop_container{
+}
+
+/* styling af menu til desktop */
+#menu_desktop_container {
     display: none;
- }
- 
+}
+
 
 /* ----------------------
 -------- FOREDRAG -------
@@ -986,7 +1024,7 @@ main {
     margin: 5%;
 }
 
-.foredrag_illustration{
+.foredrag_illustration {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -997,7 +1035,7 @@ main {
 /* ----------------------
 ----------- QUIZ---------
 ---------------------- */
-.quiz_wrapper{
+.quiz_wrapper {
     max-width: 50em;
     margin: 0 auto;
 }
@@ -1017,7 +1055,7 @@ main {
     font-weight: 500;
 }
 
-.foredrag_illustration{
+.foredrag_illustration {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1066,20 +1104,22 @@ main {
 .kunstner_tekst_container p {
     margin-top: 1.5em;
     font-weight: 400;
-    line-height: 1.5; /*SØRGER FOR AT DOTS LIGGER PÅ LINJE MED TEKSTEN*/
+    line-height: 1.5;
+    /*SØRGER FOR AT DOTS LIGGER PÅ LINJE MED TEKSTEN*/
 }
 
 .kunstner_dot2 {
     height: 5px;
     width: 5px;
-    vertical-align: middle; /*SÆTTER DOTS I MIDTEN VERTIKALT*/
+    vertical-align: middle;
+    /*SÆTTER DOTS I MIDTEN VERTIKALT*/
     margin-right: 5px;
     background-color: var(--roed);
     border-radius: 50%;
     display: inline-block;
 }
 
-.bestil_knap{
+.bestil_knap {
     padding: 0.6em 1.7em;
     border: none;
     border-radius: 5px;
@@ -1108,6 +1148,7 @@ main {
 #kunstner_viser {
     margin-top: 10rem;
 }
+
 .kunstner_maps_container {
     margin: 20px;
     display: flex;
@@ -1146,7 +1187,8 @@ main {
     margin: 1em 0;
 }
 
-.bagom_broedtekst h2, .bagom_broedtekst p {
+.bagom_broedtekst h2,
+.bagom_broedtekst p {
     margin: 0.5em 0;
     font-weight: 400;
 }
@@ -1170,9 +1212,9 @@ main {
     gap: 0.5em;
 }
 
-.bagom_galleri img{
+.bagom_galleri img {
     width: 100%;
-    padding:5px;
+    padding: 5px;
 }
 
 /* ----------------------
@@ -1189,7 +1231,7 @@ main {
 
 .favner_intro_tekst h1 {
     padding-bottom: 0.8em;
-} 
+}
 
 .favner_intro_tekst h4 {
     text-align: center;
@@ -1211,11 +1253,13 @@ main {
 }
 
 /* Tekst styling - kontor og haller */
-.favner_kontor_tekst h2, .favner_hal_tekst h2 {
+.favner_kontor_tekst h2,
+.favner_hal_tekst h2 {
     margin-bottom: 0.5em;
 }
 
-.favner_kontor_tekst p a, .favner_hal_tekst p a {
+.favner_kontor_tekst p a,
+.favner_hal_tekst p a {
     color: var(--roed);
     font-weight: 600;
 }
@@ -1227,7 +1271,8 @@ main {
 }
 
 /* Galleri - både kontor og hal */
-.favner_kontor_galleri, .favner_hal_galleri {
+.favner_kontor_galleri,
+.favner_hal_galleri {
     /* display: flex;
     flex-wrap: wrap;
     gap: 1em;
@@ -1241,8 +1286,9 @@ main {
 }
 
 
-.favner_kontor_galleri img, .favner_hal_galleri img {
-   /*  width: 47%;
+.favner_kontor_galleri img,
+.favner_hal_galleri img {
+    /*  width: 47%;
     max-width: 15em; */
     width: 100%;
 }
@@ -1311,7 +1357,8 @@ main {
     margin-right: 30%;
 }
 
-.favner_hal_illustration1 .favner_img2, .favner_img1 {
+.favner_hal_illustration1 .favner_img2,
+.favner_img1 {
     width: 50%;
     max-width: 8em;
 }
@@ -1345,13 +1392,13 @@ main {
     margin-top: 1em;
 }
 
-#kontakt_top_container{
+#kontakt_top_container {
     display: flex;
     flex-direction: column;
     margin: .6em 0;
 }
 
-.kontakt_top_element{
+.kontakt_top_element {
     margin: 5% auto;
     display: flex;
     flex-direction: column;
@@ -1359,7 +1406,7 @@ main {
     gap: .7em;
 }
 
-#kontakt_info{
+#kontakt_info {
     font-weight: 400;
     text-align: center;
     margin-bottom: 10%;
@@ -1381,8 +1428,9 @@ main {
     text-align: center;
 }
 
-#kontakt_faq_display{
-    display: none; /* vises først på desktop */
+#kontakt_faq_display {
+    display: none;
+    /* vises først på desktop */
 }
 
 .kontakt_faq {
@@ -1438,11 +1486,11 @@ main {
 }
 
 .kontakt_faq_element.aktiv .faq_knap {
-   transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 /* display font ved kontaktforms*/
-#kontakt_forms_display{
+#kontakt_forms_display {
     width: 60%;
     margin-left: 15%;
     margin-bottom: 5%;
@@ -1451,13 +1499,13 @@ main {
 }
 
 /* Kontakt - Billede container */
-#kontakt_img_container{
+#kontakt_img_container {
     display: flex;
     flex-direction: column;
     margin-top: 12%;
 }
 
-.kontakt_img_element{
+.kontakt_img_element {
     margin: 2%;
     max-width: 75%;
     align-self: center;
@@ -1467,15 +1515,15 @@ main {
 /* ---------------------
 ------- FEJLSIDE -------
 ---------------------- */
-#h1_fejl{
+#h1_fejl {
     margin-top: 2em;
     text-align: center;
 }
 
 .h4_fejl {
-text-align: center;
-margin-top: 1.5em;
-color: black;
+    text-align: center;
+    margin-top: 1.5em;
+    color: black;
 }
 
 .knap-container {
@@ -1492,7 +1540,7 @@ color: black;
     color: var(--lyssand);
 }
 
-.fejl_element_knap{
+.fejl_element_knap {
     padding: 0.6em 1.7em;
     border: none;
     border-radius: 5px;
@@ -1529,7 +1577,7 @@ color: black;
 -------------------- */
 footer {
     background-color: var(--cyanblaa);
-    
+
 }
 
 .footer_container {
@@ -1544,7 +1592,9 @@ footer {
     margin: 0 auto;
 }
 
-footer p, footer h4, footer a {
+footer p,
+footer h4,
+footer a {
     color: var(--lyssand);
 }
 
@@ -1566,7 +1616,7 @@ footer h4 {
 }
 
 #footer_maps {
-    width: 320px; 
+    width: 320px;
     height: 200px;
 }
 
@@ -1574,7 +1624,7 @@ footer h4 {
     text-decoration: underline;
 }
 
-.footer_logo{
+.footer_logo {
     width: 45%;
     max-width: 15em;
 }
@@ -1586,40 +1636,46 @@ footer h4 {
 
 -------------------------------------------------- */
 /* BREAKPOINT T. TABLET */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+
     /* ------- GENEREL STYLING --------*/
-    h1 { /* Bruges til over-overskrift */
+    h1 {
+        /* Bruges til over-overskrift */
         font-size: 2.4em;
     }
-    
-    h2 { /* Bruges til underoverskrift */
+
+    h2 {
+        /* Bruges til underoverskrift */
         font-size: 1.5em;
     }
-    
-    button { /* knap */
+
+    button {
+        /* knap */
         font-size: 1.2em;
     }
-    
-    h4 { /* introducerende brødtekst */
+
+    h4 {
+        /* introducerende brødtekst */
         font-size: 1.1em;
     }
-    
+
     p {
         font-size: 1em;
     }
 
-   /* ------- FORSIDE --------*/
-   /* Størrelse på karrusel */
-   .forside_element {
-    width: 20em;
-    height: 20em;
+    /* ------- FORSIDE --------*/
+    /* Størrelse på karrusel */
+    .forside_element {
+        width: 20em;
+        height: 20em;
     }
 }
 
 
 /* BREAKPOINT TIL DESKTOP */
-@media screen and (min-width: 1024px){ 
-/* -------------------- 
+@media screen and (min-width: 1024px) {
+
+    /* -------------------- 
 --------- MENU --------
 ----------------------- */
     .navbar {
@@ -1636,7 +1692,7 @@ footer h4 {
         padding: 0 7em 0 0;
     }
 
-    #menu.aktiv { 
+    #menu.aktiv {
         display: flex;
     }
 
@@ -1647,7 +1703,8 @@ footer h4 {
         display: block;
     }
 
-    .menupunkt:hover, .underpunkt:hover {
+    .menupunkt:hover,
+    .underpunkt:hover {
         cursor: pointer;
         text-decoration: underline;
     }
@@ -1687,11 +1744,11 @@ footer h4 {
         margin: 0 0 -3em 2em;
     }
 
-     /* -------------------- 
+    /* -------------------- 
     ------- FORSIDE -------
     -------------------- */
-     /* Video */
-     .forside_video_container {
+    /* Video */
+    .forside_video_container {
         width: 100vw;
         min-height: 370px;
         max-height: 1080px;
@@ -1701,7 +1758,7 @@ footer h4 {
         align-items: center;
         justify-content: center;
     }
-    
+
     .forside_video_container video {
         min-width: 100%;
         min-height: 100%;
@@ -1716,7 +1773,7 @@ footer h4 {
     .forside_sektion1 {
         margin-bottom: 6em;
     }
-    
+
     /* Styling af illustrationer*/
     .forside_container1 {
         width: 80%;
@@ -1766,11 +1823,13 @@ footer h4 {
         max-width: 65em;
         position: relative;
     }
+
     .forside_illustration {
         height: auto;
         padding: 1em;
         margin: 0;
     }
+
     .forside_img_chesterfield {
         max-width: 21em;
     }
@@ -1799,7 +1858,7 @@ footer h4 {
 
     .forside_faq_sporgsmaal h3 {
         font-size: 1.1em;
-    } 
+    }
 
     .forside_faq_svar p {
         font-size: 1em;
@@ -1810,16 +1869,16 @@ footer h4 {
     ------- MAD OG DRIKKE -------
     --------------------------- */
     /* sørger for at man ikke kan scrolle horisontalt */
-    main{
+    main {
         overflow-x: hidden;
     }
 
-    #mad_overskrift{
+    #mad_overskrift {
         padding-top: 0%;
     }
 
     /* tilpasning af bredde og font størrelse på intro tekst */
-    #mad_introtekst{
+    #mad_introtekst {
         margin-left: 18%;
         margin-right: 18%;
         font-size: 1.25em;
@@ -1856,7 +1915,7 @@ footer h4 {
     #mad_modal_display2 {
         padding-bottom: 1.5em;
         transform: rotate(15deg);
-        margin: -9% 0 0 ;
+        margin: -9% 0 0;
     }
 
     .mad_modal_element {
@@ -1869,33 +1928,39 @@ footer h4 {
         font-size: 1.7em;
     }
 
-    #mad_kaffeimg_knap, #mad_bagimg_knap {
+    #mad_kaffeimg_knap,
+    #mad_bagimg_knap {
         padding: 0.7em 1.7em;
         border-radius: 10px;
     }
 
-    #mad_kaffeimg_knap:hover, #mad_bagimg_knap:hover {
+    #mad_kaffeimg_knap:hover,
+    #mad_bagimg_knap:hover {
         font-size: 1.4em;
     }
 
     /* ------ Tilpasning af modaler --------*/
 
-    #mad_kaffe_modal,  #mad_bagvaerk_modal{
+    #mad_kaffe_modal,
+    #mad_bagvaerk_modal {
         top: 7em;
         max-width: 50em;
     }
 
     /* Luk kaffe modal knap */
-    #lukknap_kaffe_modal, #lukknap_bagvaerk_modal {
-        font-size: 400%; /* størrelsen på lukknap (x) */
+    #lukknap_kaffe_modal,
+    #lukknap_bagvaerk_modal {
+        font-size: 400%;
+        /* størrelsen på lukknap (x) */
     }
 
-    .mad_kaffe_modal_overskrift, .mad_bagvaerk_modal_overskrift{
+    .mad_kaffe_modal_overskrift,
+    .mad_bagvaerk_modal_overskrift {
         font-size: 1.5em;
     }
 
     /* Tilpasning af menukort styling */
-    #menukort{
+    #menukort {
         max-width: 60%;
     }
 
@@ -1904,7 +1969,8 @@ footer h4 {
     ------- EVENTS -------
     -------------------- */
     .events_boks:hover {
-        transform: scale(1.05); /* DETTE FORSTØRRE EVENT KORT VED HOVER */
+        transform: scale(1.05);
+        /* DETTE FORSTØRRE EVENT KORT VED HOVER */
         box-shadow: 0 4px 8px gray;
         transition: 0.5s ease-in-out;
     }
@@ -1913,43 +1979,44 @@ footer h4 {
         margin: 4em auto 1em;
         padding: 0 0.5em;
     }
-    
-    .events_h1 { /* EVENTS titel */
+
+    .events_h1 {
+        /* EVENTS titel */
         margin-bottom: 0.5em;
     }
-    
+
     .events_filtrering {
         margin: 3.5em auto;
     }
-    
+
     .events_h4 {
         margin-bottom: 0.7em;
     }
-    
+
     .events_filter_knap {
         font-size: 1em;
         padding: 0.2em 0.5em;
         border-radius: 12px;
     }
-    
+
     .events_container {
         margin: 0 auto 6em;
         padding: 0 2em;
     }
-    
+
     .events_boks {
         border-radius: 10px;
     }
-    
+
     .events_navn {
         padding: 1em 0.7em 1.2em;
         height: 9.5em;
     }
-    
+
     .events_navn h2 {
         font-size: 1.4em;
     }
-    
+
     .events_linje {
         width: 80%;
         height: 2px;
@@ -1957,29 +2024,31 @@ footer h4 {
         border-radius: 10px;
         margin: 0.8em 0;
     }
-    
+
     .events_info {
         width: 90%;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    
+
     .events_cirkel {
         width: 0.4em;
         height: 0.4em;
         background-color: var(--lyssand);
         border-radius: 30px;
     }
-    
-    .events_dato, .events_kategori, .events_pris {
+
+    .events_dato,
+    .events_kategori,
+    .events_pris {
         font-size: 1em;
     }
 
     /* --------------------------------- 
     --- EVENTUNDERSIDER (FÆLLESSANG) ---
     --------------------------------- */
-    #sang_h1{
+    #sang_h1 {
         margin: 2%;
     }
 
@@ -1991,25 +2060,26 @@ footer h4 {
         margin-bottom: 2em;
     }
 
-    #events_tilmeld_display{
+    #events_tilmeld_display {
         max-width: 15%;
         margin-right: 30%;
         margin-top: 5%;
     }
 
-    .forms_container{
+    .forms_container {
         width: 40%;
         margin: 5% auto 3%;
     }
 
-    #events_maps_display{
+    #events_maps_display {
         max-width: 23%;
     }
 
-    
+
     /* TILMELDING SEND MODAL */
-    #events_send_modal{
-        display: none; /* sættes til display: block i JS */
+    #events_send_modal {
+        display: none;
+        /* sættes til display: block i JS */
         position: fixed;
         z-index: 10;
         top: 18%;
@@ -2027,26 +2097,26 @@ footer h4 {
     /* ---------------------- 
     ----- FÆLLESSPISNING ----
     ---------------------- */
-     /* styling af menu til mobil --> skjuler mobil menu */
-    #menu_mobil_container{
+    /* styling af menu til mobil --> skjuler mobil menu */
+    #menu_mobil_container {
         display: none;
     }
-    
+
     /* styling af menu til desktop --> viser desktop menu */
-    #menu_desktop_container{
+    #menu_desktop_container {
         display: flex;
         justify-content: center;
         max-width: 100%;
     }
-    
-    #spisning_desktop_menu{
+
+    #spisning_desktop_menu {
         max-width: 60%;
     }
 
     /* ----------------------
     -------- FOREDRAG -------
     ---------------------- */
-    #event_overskrift{
+    #event_overskrift {
         margin: 2%;
     }
 
@@ -2057,7 +2127,7 @@ footer h4 {
 
     #event_viser {
         display: flex;
-        justify-content:flex-end;
+        justify-content: flex-end;
         width: 50%;
         max-width: 22em;
     }
@@ -2065,17 +2135,17 @@ footer h4 {
     /* ----------------------
     ----------- QUIZ---------
     ---------------------- */
-    #event_overskrift{
+    #event_overskrift {
         margin: 2%;
     }
 
-    .quiz_wrapper{
+    .quiz_wrapper {
         margin-top: 2%;
         align-items: center;
         margin: 2% auto;
     }
 
-    #eventviser{
+    #eventviser {
         display: flex;
         justify-content: right;
         align-items: right;
@@ -2096,23 +2166,23 @@ footer h4 {
     #infografik_desk {
         width: 100%;
     }
-    
+
     .bagomfikumdik_wrapper {
         display: grid;
         grid-template-columns: 20% 40% 20%;
         margin: 5em 0 5em 0;
         z-index: 3;
     }
-    
+
     #bagomfikumdik_displayfont {
         display: block;
         width: 450px;
     }
 
-    #presse_titel{
+    #presse_titel {
         padding-top: 3em;
     }
-    
+
     .bagomfikumdik_wrapper h2 {
         margin-top: 5em;
     }
@@ -2123,13 +2193,13 @@ footer h4 {
         margin: 0 4em 0 4em;
     }
 
-    .presse_billede:hover{
+    .presse_billede:hover {
         background-color: #b61624;
         transition-duration: 1s;
         border-radius: 10px;
     }
 
-    .bagom_broedtekst{
+    .bagom_broedtekst {
         margin: 5em;
     }
 
@@ -2148,13 +2218,13 @@ footer h4 {
         gap: 1em;
     }
 
-    .bagom_galleri img{
+    .bagom_galleri img {
         width: 100%;
-        padding:5px;
+        padding: 5px;
         transition-duration: 0.5s;
     }
 
-    .bagom_galleri img:hover{
+    .bagom_galleri img:hover {
         transform: scale(1.1);
     }
 
@@ -2167,56 +2237,54 @@ footer h4 {
         gap: 3rem;
         max-width: 60em;
     }
-    
+
     .favner_intro_tekst h1 {
         padding-bottom: 0.6em;
-    } 
-    
+    }
+
     .favner_intro_img {
         width: 42em;
     }
-    
+
     /* Kontorfællesskab */
     #favner_kontor {
         flex-direction: row;
         max-width: 70em;
         margin-bottom: 5.5em;
     }
-    
+
     .favner_kontor_tekst {
-        width: 40%; 
+        width: 40%;
         padding-right: 1em;
     }
 
     /* Tekst styling - kontor og haller */
-    .favner_kontor_tekst h2, .favner_hal_tekst h2 {
+    .favner_kontor_tekst h2,
+    .favner_hal_tekst h2 {
         margin-bottom: 0.5em;
     }
-    
+
     .favner_kontor_billeder {
         flex-direction: column;
         width: 60%;
     }
-    
+
     /* Galleri - både kontor og hal */
-    .favner_kontor_galleri, .favner_hal_galleri {
+    .favner_kontor_galleri,
+    .favner_hal_galleri {
         margin: 3.3em 0 1em;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .favner_kontor_galleri img, .favner_hal_galleri img {
-        /* width: 11em; */
-    }
-    
     .favner_kontor_info {
         justify-content: start;
         margin-top: .7em;
     }
-    
+
     .favner_kontor_illustration {
         margin-left: 3em;
     }
-    
+
     /* Hallerne */
     .favner_img_container {
         max-width: 60em;
@@ -2226,14 +2294,14 @@ footer h4 {
         margin-bottom: -3.5em;
         margin-right: 32em;
     }
-    
+
     #favner_hal {
         flex-direction: row;
         max-width: 70em;
         margin: 0 auto 5em;
         align-items: center;
     }
-    
+
     .favner_hal_container1 {
         width: 60%;
     }
@@ -2243,15 +2311,15 @@ footer h4 {
         width: 40%;
         padding-left: 1em;
     }
-    
+
     .favner_hal_info {
         width: 100%;
     }
-    
+
     .favner_hal_illustration1 {
-        margin-right: 45%; 
+        margin-right: 45%;
     }
-    
+
     .favner_hal_illustration2 {
         margin-left: 29%;
     }
@@ -2259,11 +2327,11 @@ footer h4 {
     /* ----------------------
     -------- KONTAKT --------
     ---------------------- */
-    #kontakt_sidetitel{
+    #kontakt_sidetitel {
         margin-top: 2%;
     }
 
-    #kontakt_top_container{
+    #kontakt_top_container {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -2273,8 +2341,8 @@ footer h4 {
         max-width: 75em;
     }
 
-     /* FAQ sektion */
-     .kontakt_sektion1 {
+    /* FAQ sektion */
+    .kontakt_sektion1 {
         margin: 2.5em 0;
         display: flex;
         justify-content: center;
@@ -2287,9 +2355,11 @@ footer h4 {
         width: 90%;
         max-width: 65em;
         position: relative;
-    } /* HVAD ER DET I STYLER HER? DER FINDES INGEN CLASS MED DETTE NAVN */
+    }
 
-    #kontakt_faq_display{
+    /* HVAD ER DET I STYLER HER? DER FINDES INGEN CLASS MED DETTE NAVN */
+
+    #kontakt_faq_display {
         display: inline;
         width: 35%;
         margin-left: -28%;
@@ -2312,14 +2382,14 @@ footer h4 {
 
     .kontakt_faq_sporgsmaal h3 {
         font-size: 1em;
-    } 
+    }
 
     .kontakt_faq_svar p {
         font-size: 1em;
     }
 
     /* Kontakt forms */
-    #kontakt_forms_display{
+    #kontakt_forms_display {
         max-width: 18%;
         margin-left: 20%;
         margin-top: 2%;
@@ -2327,13 +2397,13 @@ footer h4 {
         transform: rotate(0deg);
     }
 
-    .kontakt_forms_container{
+    .kontakt_forms_container {
         max-width: 40%;
         margin: 0 auto;
     }
 
     /* Kontakt - Billede container */
-    #kontakt_img_container{
+    #kontakt_img_container {
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -2342,7 +2412,7 @@ footer h4 {
         margin-bottom: 4%;
     }
 
-    .kontakt_img_element{
+    .kontakt_img_element {
         max-width: 35%;
         margin: 0;
     }
@@ -2360,14 +2430,14 @@ footer h4 {
     .kunstner_spotify_container {
         margin: 5em 15em;
     }
-    
+
     .kunstner_wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
         margin-right: 100px;
-    
+
     }
 
     .kunstner_dot2 {
@@ -2377,7 +2447,7 @@ footer h4 {
     .bestil_knap {
         margin: 1.5em 0 0;
     }
-    
+
     #kunstner_plek {
         display: flex;
         justify-content: center;
@@ -2385,50 +2455,51 @@ footer h4 {
         width: 1000px;
         height: auto;
     }
-    
+
     #kunstner_plek2 {
         display: none;
     }
-    
+
     #kunstner_viser {
         width: 350px;
         height: auto;
-        margin-top:0;
+        margin-top: 0;
     }
-    
-    
+
+
     .kunstner_tekst_container {
         margin: 0 7em;
         padding-left: 30px;
     }
-    
-    
+
+
     .kunstner_maps_container {
         margin: 5em 10em;
         border-radius: 10px;
     }
 
 
-    
+
 
     /* -------------------- 
     ------- FOOTER -------
-    -------------------- */ 
+    -------------------- */
     footer {
         background-color: var(--cyanblaa);
     }
-    
+
     .footer_container {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: start;
         gap: 1.5em;
     }
-    
-    footer h4, footer p {
+
+    footer h4,
+    footer p {
         text-align: left;
     }
-    
+
     .footer_kontakt {
         max-width: 12em;
     }
@@ -2439,7 +2510,7 @@ footer h4 {
         margin: 1em 0;
         min-width: 8em;
     }
-    
+
     .footer_maps {
         display: flex;
         gap: 1em;
@@ -2449,16 +2520,18 @@ footer h4 {
         display: block;
         max-width: 5em;
     }
-    
+
     #footer_maps {
-        width: 280px; 
+        width: 280px;
         height: 200px;
     }
-    .footer_aabningstider, .footer_nav {
+
+    .footer_aabningstider,
+    .footer_nav {
         min-width: 10em;
     }
 
-    .footer_logo{
+    .footer_logo {
         max-width: 9em;
         margin: auto 0
     }
@@ -2473,6 +2546,6 @@ footer h4 {
 
     /* Video forsvinder, hvis sitet tilgås fra en monitor større end 1920x*/
     .forside_video_container {
-       display: none;
-   }
+        display: none;
+    }
 }
