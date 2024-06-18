@@ -13,7 +13,9 @@ document.getElementById('form').addEventListener('submit', function(event) {
     const mail = document.getElementById('mail');
     const besked = document.getElementById('besked');
 
-    // Tjekker om input felterne er tomme
+       // Tjekker om input felterne er tomme, eller kun indeholder mellemrum (det er det trim betyder)
+    // Hvis feltet er tomt vises den tilhørende fejlmeddelelse ved at ændre display til "inline"
+    // DETTE NEDENFOR ER EN BOOLEAN med kun true og false som værdier
     let isValid = true;
 
     if (antal.value.trim() === '') {
