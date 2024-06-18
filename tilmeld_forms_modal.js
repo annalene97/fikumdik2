@@ -1,10 +1,12 @@
-document.getElementById('form').addEventListener('submit', function(event) {
+const formular = document.getElementById('form');
+formular.addEventListener('submit', function(event) {
     // Sørger for at den ikke indsender formen
     event.preventDefault();
-    
+
     // Fjerner alle tidligere fejlbeskeder
-    document.querySelectorAll('.fejl').forEach(function(error) {
-        error.style.display = 'none';
+    const fejlMelding = document.querySelectorAll('.fejl');
+    fejlMelding.forEach(fejl => {
+        fejl.style.display = 'none'; 
     });
 
     // Finder input elementerne fra HTML
