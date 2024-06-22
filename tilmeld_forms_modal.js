@@ -56,9 +56,6 @@ formular.addEventListener('submit', function(event) {
             lukKaffeModal.onclick = function() {
                 eventsSendModal.style.display = "none";
             }
-
-            /* FØRSTE FORSØG MED ALERT
-        alert('Juhuuu vi glæder os til at se dig/jer!'); // LAV SJOV*/ 
     }
 });
 
